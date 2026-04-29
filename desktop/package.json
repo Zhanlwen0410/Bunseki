@@ -1,0 +1,69 @@
+{
+  "name": "bunseki-desktop",
+  "version": "1.0.0",
+  "description": "Electron desktop for Bunseki",
+  "author": "Bunseki Team",
+  "private": true,
+  "type": "module",
+  "main": "dist-electron/main.cjs",
+  "scripts": {
+    "build:electron": "npx esbuild electron/main.ts --bundle --platform=node --target=node18 --external:electron --format=cjs --outfile=dist-electron/main.cjs && npx esbuild electron/preload.ts --bundle --platform=node --target=node18 --external:electron --format=cjs --outfile=dist-electron/preload.cjs",
+    "watch:electron": "concurrently -k \"npx esbuild electron/main.ts --bundle --platform=node --target=node18 --external:electron --format=cjs --outfile=dist-electron/main.cjs --watch\" \"npx esbuild electron/preload.ts --bundle --platform=node --target=node18 --external:electron --format=cjs --outfile=dist-electron/preload.cjs --watch\"",
+    "dev": "npm run build:electron && concurrently -k \"npm run watch:electron\" \"vite\" \"wait-on http://127.0.0.1:5173 && electron .\"",
+    "build": "npm run build:electron && vite build",
+    "dist:win": "npm run build && electron-builder --win nsis",
+    "dist:dir": "npm run build && electron-builder --dir",
+    "dist:win:cn": "npm run build && cmd /c \"set ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ && electron-builder --win nsis\"",
+    "dist:dir:cn": "npm run build && cmd /c \"set ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ && electron-builder --dir\"",
+    "preview": "vite preview",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
+    "d3": "^7.9.0",
+    "plotly.js-dist-min": "^2.35.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-plotly.js": "^2.6.0",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/node": "^20.12.7",
+    "@types/plotly.js": "^2.33.3",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3",
+    "esbuild": "^0.20.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.bunseki.desktop",
+    "productName": "Bunseki",
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
