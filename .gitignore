@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+*.log
+tmp_*
+data/recent_files.json
+model/*.bin
+model/*.h5
+model/*.msgpack
+model/*.safetensors
+
+# LLM cache (auto-generated SQLite database)
+data/llm_cache.db
+
+# LLM config (contains API keys — set via Settings UI)
+data/llm_config.json
+
+# Local LLM models (large binaries)
+models/*.gguf

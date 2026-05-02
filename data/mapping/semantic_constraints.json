@@ -1,0 +1,159 @@
+{
+  "_meta": {
+    "description": "Three-layer semantic constraints: token quality -> controlled mapping -> BERT disambiguation.",
+    "policy": "Prefer Z99 over implausible domain assignment."
+  },
+  "allowed_pos_prefixes": [
+    "名詞",
+    "動詞",
+    "形容詞",
+    "副詞"
+  ],
+  "blocked_pos_prefixes": [
+    "助詞",
+    "助動詞",
+    "補助記号",
+    "記号",
+    "空白"
+  ],
+  "stopwords": [
+    "は",
+    "が",
+    "を",
+    "に",
+    "へ",
+    "で",
+    "と",
+    "の",
+    "も",
+    "や",
+    "か",
+    "ね",
+    "よ"
+  ],
+  "max_candidates": 3,
+  "wsd_similarity_threshold": 0.22,
+  "domain_whitelist": [],
+  "token_overrides": {
+    "学校": [
+      "H1",
+      "S5+"
+    ],
+    "大学": [
+      "H1",
+      "S5+"
+    ],
+    "駅": [
+      "M3"
+    ],
+    "会社": [
+      "I2.1"
+    ],
+    "病院": [
+      "B3",
+      "H1"
+    ]
+  },
+  "token_domain_blacklist": {
+    "学校": [
+      "S9",
+      "B1",
+      "B2",
+      "X4.1"
+    ],
+    "大学": [
+      "S9",
+      "B1",
+      "B2",
+      "X4.1"
+    ],
+    "駅": [
+      "B1",
+      "B2",
+      "X4.1"
+    ],
+    "へ": [
+      "B1",
+      "B2",
+      "X4.1"
+    ]
+  },
+  "pos_domain_blacklist": {
+    "助詞": [
+      "B1",
+      "B2",
+      "S9",
+      "X4.1"
+    ],
+    "助動詞": [
+      "B1",
+      "B2",
+      "S9",
+      "X4.1"
+    ]
+  },
+  "location_like_tokens": [
+    "学校",
+    "大学",
+    "駅",
+    "空港",
+    "公園"
+  ],
+  "location_forbidden_domains": [
+    "B1",
+    "B2",
+    "S9"
+  ],
+  "coarse_ontology": {
+    "institution": [
+      "S5+",
+      "P1",
+      "G1",
+      "H1",
+      "M7",
+      "I2.1"
+    ],
+    "human": [
+      "S2",
+      "S1",
+      "Z8",
+      "Z1"
+    ],
+    "body": [
+      "B1",
+      "B2",
+      "B3"
+    ],
+    "abstract": [
+      "X",
+      "A",
+      "T",
+      "N",
+      "Q"
+    ],
+    "action": [
+      "M1",
+      "M2",
+      "K5",
+      "I3"
+    ]
+  },
+  "hard_constraint_words": {
+    "institution": [
+      "学校",
+      "大学",
+      "会社",
+      "病院"
+    ],
+    "human": [
+      "he",
+      "she",
+      "they",
+      "him",
+      "her"
+    ]
+  },
+  "hard_constraint_penalty": 0.5,
+  "mrw_distance_threshold": 0.02,
+  "enable_mipvu_layer3": true
+}

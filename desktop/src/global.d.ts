@@ -15,6 +15,8 @@ declare global {
       setRecentFiles: (payload: Record<string, unknown>) => Promise<{ ok: boolean }>
       onMenuAction: (handler: (action: string) => void) => () => void
       setMenuLanguage: (lang: string) => Promise<{ ok: boolean }>
+      getConstraints: () => Promise<{ ok: boolean; data?: unknown; error?: string }>
+      setConstraints: (content: unknown) => Promise<{ ok: boolean; error?: string }>
     }
   }
 }

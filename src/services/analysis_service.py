@@ -12,7 +12,9 @@ from src.main import build_result, clear_tagger_cache
 from src.utils.category_labels import localize_category_label
 from src.utils.file_io import read_json_file, write_json
 
-SUPPORTED_LANGUAGES = frozenset({"zh", "ja", "en"})
+from src.i18n import SUPPORTED_LANGUAGES
+
+SUPPORTED_LANGUAGES_SET = frozenset(SUPPORTED_LANGUAGES)
 SPLIT_MODES = frozenset({"A", "B", "C"})
 MAX_LEMMA_LEN = 512
 
@@ -20,10 +22,102 @@ _lexicon_lock = threading.Lock()
 
 
 def normalize_lexicon_term(term: str) -> str:
+    """Normalize a lexicon term for storage: NFKC normalization + strip."""
     value = unicodedata.normalize("NFKC", term or "").strip()
     if value.startswith("??") and len(value) > 1:
         return "??" + value[1:]
     return value
+
+
+def parse_analyze_params(
+    *,
+    text_raw: str = "",
+    language_raw: Any = "zh",
+    tokenizer_raw: Any = "sudachi",
+    mode_raw: Any = "C",
+    min_frequency_raw: Any = 1,
+    top_n_raw: Any = None,
+    lexicon_path_raw: Any = None,
+    default_lexicon_path: str = "",
+    use_bert_wsd_raw: Any = True,
+    bert_model_dir_raw: Any = None,
+) -> dict[str, Any]:
+    """Parse and normalize all analysis request parameters in one place.
+
+    Returns a dict with either ``{"ok": False, "error": {...}}`` on
+    validation failure or ``{"ok": True, ...}`` with all parsed values.
+    """
+    text = str(text_raw or "").strip()
+    if not text:
+        return {
+            "ok": False,
+            "error": {
+                "code": "missing_text",
+                "message": "Text is required.",
+                "hint": "Paste or type Japanese text in the input area.",
+            },
+        }
+    language = str(language_raw or "zh").strip()
+    tokenizer = str(tokenizer_raw or "sudachi").strip()
+    mode = str(mode_raw or "C").strip()
+    try:
+        min_frequency = parse_min_frequency(min_frequency_raw)
+        top_n = parse_top_n(top_n_raw)
+    except (TypeError, ValueError) as exc:
+        return {
+            "ok": False,
+            "error": {
+                "code": "invalid_number",
+                "message": f"Invalid numeric option: {exc}",
+                "hint": "min_frequency and top_n must be integers.",
+            },
+        }
+
+    err = validate_analyze_options(
+        language=language,
+        tokenizer=tokenizer,
+        mode=mode,
+        min_frequency=min_frequency,
+        top_n=top_n,
+    )
+    if err:
+        return {"ok": False, "error": err}
+
+    lexicon = str(lexicon_path_raw or default_lexicon_path).strip()
+    if not lexicon:
+        return {
+            "ok": False,
+            "error": {
+                "code": "missing_lexicon",
+                "message": "Lexicon path is empty.",
+                "hint": "Set a valid lexicon JSON path.",
+            },
+        }
+
+    return {
+        "ok": True,
+        "text": text,
+        "language": language,
+        "tokenizer": tokenizer,
+        "mode": mode,
+        "min_frequency": min_frequency,
+        "top_n": top_n,
+        "lexicon": lexicon,
+        "use_bert_wsd": bool(use_bert_wsd_raw),
+        "bert_model_dir": bert_model_dir_raw if bert_model_dir_raw else None,
+    }
+
+
+def safe_error_msg(exc: BaseException) -> str:
+    """Return a user-safe message for display without leaking internal paths."""
+    msg = str(exc).strip()
+    if not msg:
+        return type(exc).__name__
+    import os as _os
+    import pathlib as _pl
+
+    root = str(_pl.Path(__file__).resolve().parents[2])
+    return msg.replace(root, "<repo>").replace(_os.sep, "/")
 
 
 def parse_min_frequency(raw: Any) -> int:
@@ -51,7 +145,7 @@ def validate_analyze_options(
 ) -> Optional[Dict[str, str]]:
     """Return error dict {code, message, hint} or None if OK."""
     lang = (language or "en").strip()
-    if lang not in SUPPORTED_LANGUAGES:
+    if lang not in SUPPORTED_LANGUAGES_SET:
         return {
             "code": "invalid_language",
             "message": f"Unsupported language: {language!r}.",
@@ -99,6 +193,8 @@ def analyze_with_profile(
     min_frequency: int = 1,
     top_n: Optional[int] = None,
     include_profile: bool = True,
+    use_bert_wsd: bool = True,
+    bert_model_dir: Optional[str] = None,
 ) -> Dict[str, Any]:
     """Run full analysis; optionally attach domain profile rows (WebView needs both)."""
     result = build_result(
@@ -111,6 +207,8 @@ def analyze_with_profile(
         unknown_domain=unknown_domain,
         min_frequency=min_frequency,
         top_n=top_n,
+        use_bert_wsd=use_bert_wsd,
+        bert_model_dir=bert_model_dir,
     )
     if not include_profile:
         return {"result": result}

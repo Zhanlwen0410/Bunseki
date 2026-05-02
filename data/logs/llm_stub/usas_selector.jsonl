@@ -1,0 +1,796 @@
+{"ts": 1777535654.5070336, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777535654.5110018, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777535654.5124998, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777535709.005108, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777535709.0069473, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777535709.0082219, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777535709.0101469, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777535709.0125215, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777536020.6140993, "kind": "layer1_source_domain", "text": "language", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777536020.6159167, "kind": "layer1_source_domain", "text": "edge (of a knife or sword)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777536020.617103, "kind": "layer1_source_domain", "text": "to stick into (of something with a sharp point)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777536105.318214, "kind": "layer1_source_domain", "text": "language", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777536105.3198693, "kind": "layer1_source_domain", "text": "edge (of a knife or sword)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777536105.3211412, "kind": "layer1_source_domain", "text": "to stick into (of something with a sharp point)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537062.7330253, "kind": "layer1_source_domain", "text": "language", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537062.7353878, "kind": "layer1_source_domain", "text": "edge (of a knife or sword)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537062.7367437, "kind": "layer1_source_domain", "text": "to stick into (of something with a sharp point)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537079.4482834, "kind": "layer1_source_domain", "text": "（stub）文脈における「言葉」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537079.4521077, "kind": "layer1_source_domain", "text": "（stub）文脈における「刃」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537079.4556842, "kind": "layer1_source_domain", "text": "（stub）文脈における「刺さる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537209.5603387, "kind": "layer1_source_domain", "text": "cooked rice", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537209.5662208, "kind": "layer1_source_domain", "text": "to eat", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537209.5700183, "kind": "layer1_source_domain", "text": "bread", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537209.574478, "kind": "layer1_source_domain", "text": "school", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537209.5774083, "kind": "layer1_source_domain", "text": "to go", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537533.6229582, "kind": "layer1_source_domain", "text": "cooked rice", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537533.627154, "kind": "layer1_source_domain", "text": "to eat", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537533.6308827, "kind": "layer1_source_domain", "text": "bread", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537533.6338005, "kind": "layer1_source_domain", "text": "school", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537533.6364303, "kind": "layer1_source_domain", "text": "to go", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537617.8932893, "kind": "layer1_source_domain", "text": "language", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537617.8945625, "kind": "layer1_source_domain", "text": "edge (of a knife or sword)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537617.895746, "kind": "layer1_source_domain", "text": "to stick into (of something with a sharp point)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537754.6975331, "kind": "layer1_source_domain", "text": "language", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537754.698885, "kind": "layer1_source_domain", "text": "edge (of a knife or sword)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537754.7000864, "kind": "layer1_source_domain", "text": "to stick into (of something with a sharp point)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537763.8288722, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537763.830372, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537763.831857, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537763.8330376, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537763.8341706, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537772.4964437, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537791.6950154, "kind": "layer1_source_domain", "text": "language", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537791.6970224, "kind": "layer1_source_domain", "text": "edge (of a knife or sword)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537791.6986263, "kind": "layer1_source_domain", "text": "to stick into (of something with a sharp point)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537802.0650516, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537802.0664313, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537802.0674458, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537802.0683904, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537802.0706122, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537802.0795107, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537871.895238, "kind": "layer1_source_domain", "text": "cooked rice", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537871.8975112, "kind": "layer1_source_domain", "text": "to eat", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537871.8997319, "kind": "layer1_source_domain", "text": "bread", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537871.9014204, "kind": "layer1_source_domain", "text": "school", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537871.9042642, "kind": "layer1_source_domain", "text": "to go", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0099785, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0166533, "kind": "layer1_source_domain", "text": "to stream", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0226388, "kind": "layer1_source_domain", "text": "to reel", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0287073, "kind": "layer1_source_domain", "text": "price decline", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0332196, "kind": "layer1_source_domain", "text": "brand", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0383856, "kind": "layer1_source_domain", "text": "advertisement", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0442476, "kind": "layer1_source_domain", "text": "reality", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0494242, "kind": "layer1_source_domain", "text": "purchase", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.054292, "kind": "layer1_source_domain", "text": "to do", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.059645, "kind": "layer1_source_domain", "text": "commodity", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0646198, "kind": "layer1_source_domain", "text": "really", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0682652, "kind": "layer1_source_domain", "text": "another thing", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0727768, "kind": "layer1_source_domain", "text": "in the first place", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0759277, "kind": "layer1_source_domain", "text": "to reach", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0809188, "kind": "layer1_source_domain", "text": "case (container)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0858858, "kind": "layer1_source_domain", "text": "to follow", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0901031, "kind": "layer1_source_domain", "text": "to shoot (arrow, bolt, dart)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0951371, "kind": "layer1_source_domain", "text": "(what) the heck", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.0993783, "kind": "layer1_source_domain", "text": "imitation", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1039677, "kind": "layer1_source_domain", "text": "to make", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1088498, "kind": "layer1_source_domain", "text": "fake", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.112946, "kind": "layer1_source_domain", "text": "to send", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1181445, "kind": "layer1_source_domain", "text": "chase", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.121898, "kind": "layer1_source_domain", "text": "gathering material (for an article, novel, etc.)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1267574, "kind": "layer1_source_domain", "text": "to be seen", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1315098, "kind": "layer1_source_domain", "text": "site", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1356614, "kind": "layer1_source_domain", "text": "to build up", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.140579, "kind": "layer1_source_domain", "text": "system", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1458533, "kind": "layer1_source_domain", "text": "existence", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1500504, "kind": "layer1_source_domain", "text": "sale", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.153708, "kind": "layer1_source_domain", "text": "pocket money", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1584299, "kind": "layer1_source_domain", "text": "earnings", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1643186, "kind": "layer1_source_domain", "text": "-ian (e.g. Italian)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1685002, "kind": "layer1_source_domain", "text": "figure", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.173359, "kind": "layer1_source_domain", "text": "to trick", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1776972, "kind": "layer1_source_domain", "text": "(suffering) damage", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1822276, "kind": "layer1_source_domain", "text": "living room (Western style)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1870697, "kind": "layer1_source_domain", "text": "network", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1916711, "kind": "layer1_source_domain", "text": "to overflow", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1950226, "kind": "layer1_source_domain", "text": "guidance", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.1980746, "kind": "layer1_source_domain", "text": "intention", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777537912.2008011, "kind": "layer1_source_domain", "text": "to finish", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538235.350055, "kind": "layer1_source_domain", "text": "language", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538235.3517945, "kind": "layer1_source_domain", "text": "edge (of a knife or sword)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538235.3530426, "kind": "layer1_source_domain", "text": "to stick into (of something with a sharp point)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538260.032097, "kind": "layer1_source_domain", "text": "language", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538260.0334148, "kind": "layer1_source_domain", "text": "edge (of a knife or sword)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538260.0345988, "kind": "layer1_source_domain", "text": "to stick into (of something with a sharp point)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538277.7727342, "kind": "layer1_source_domain", "text": "（stub）文脈における「言葉」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538277.7838504, "kind": "layer1_source_domain", "text": "（stub）文脈における「刃」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538277.791828, "kind": "layer1_source_domain", "text": "（stub）文脈における「刺さる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538352.737951, "kind": "layer1_source_domain", "text": "cooked rice", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538352.7408726, "kind": "layer1_source_domain", "text": "to eat", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538352.7431674, "kind": "layer1_source_domain", "text": "bread", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538352.745167, "kind": "layer1_source_domain", "text": "school", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538352.7468371, "kind": "layer1_source_domain", "text": "to go", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538409.9302816, "kind": "layer1_source_domain", "text": "Sweden", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.928184, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9302998, "kind": "layer1_source_domain", "text": "counter for occurrences", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9318736, "kind": "layer1_source_domain", "text": "participation (in a tournament, match, race, etc.)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9331384, "kind": "layer1_source_domain", "text": "the world", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9347453, "kind": "layer1_source_domain", "text": "ranking", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9364111, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9376996, "kind": "layer1_source_domain", "text": "the past", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9388263, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9400673, "kind": "layer1_source_domain", "text": "year", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9412167, "kind": "layer1_source_domain", "text": "being the runner-up", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.94242, "kind": "layer1_source_domain", "text": "to do", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.944023, "kind": "layer1_source_domain", "text": "another place", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.946115, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.947488, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9487529, "kind": "layer1_source_domain", "text": "experience", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9504426, "kind": "layer1_source_domain", "text": "to shoot (arrow, bolt, dart)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9521847, "kind": "layer1_source_domain", "text": "veteran", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9537368, "kind": "layer1_source_domain", "text": "play-off", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9552424, "kind": "layer1_source_domain", "text": "goal (in soccer, hockey, etc.)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9566972, "kind": "layer1_source_domain", "text": "to raise", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9580584, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9596317, "kind": "layer1_source_domain", "text": "player (of a sport)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.961683, "kind": "layer1_source_domain", "text": "center", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.963261, "kind": "layer1_source_domain", "text": "England", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.964512, "kind": "layer1_source_domain", "text": "premium", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9657564, "kind": "layer1_source_domain", "text": "league", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9670646, "kind": "layer1_source_domain", "text": "Europe", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9683702, "kind": "layer1_source_domain", "text": "activity (esp. energetic or successful)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9698746, "kind": "layer1_source_domain", "text": "carelessness", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9711568, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9724007, "kind": "layer1_source_domain", "text": "supervision", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9735847, "kind": "layer1_source_domain", "text": "worldwide", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.974894, "kind": "layer1_source_domain", "text": "(TV or radio) entertainer", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9770567, "kind": "layer1_source_domain", "text": "many", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9790308, "kind": "layer1_source_domain", "text": "attack", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9803784, "kind": "layer1_source_domain", "text": "defense", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.981482, "kind": "layer1_source_domain", "text": "systematic", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9825253, "kind": "layer1_source_domain", "text": "to make war (on)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9837158, "kind": "layer1_source_domain", "text": "team", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9856591, "kind": "layer1_source_domain", "text": "Japan", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9871767, "kind": "layer1_source_domain", "text": "group (usu. of people)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.988319, "kind": "layer1_source_domain", "text": "overwhelming strength", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.989377, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9907665, "kind": "layer1_source_domain", "text": "to become", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9925466, "kind": "layer1_source_domain", "text": "to be possible to say", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9945476, "kind": "layer1_source_domain", "text": "dead", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538413.9961128, "kind": "layer1_source_domain", "text": "to think", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538560.4299433, "kind": "layer1_source_domain", "text": "being the runner-up", "tagset_size": 4, "choice": {"label": "K5.1", "confidence": 0.35, "rationale": "keyword_sports_en"}}
+{"ts": 1777538709.922566, "kind": "layer1_source_domain", "text": "Japan", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538709.9285324, "kind": "layer1_source_domain", "text": "state of affairs", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538709.9325008, "kind": "layer1_source_domain", "text": "play-off", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538709.936546, "kind": "layer1_source_domain", "text": "almost", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538709.9401195, "kind": "layer1_source_domain", "text": "time", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538709.94398, "kind": "layer1_source_domain", "text": "United Kingdom", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538709.9483085, "kind": "layer1_source_domain", "text": "(military) expedition", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538709.952587, "kind": "layer1_source_domain", "text": "to do", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538709.9575782, "kind": "layer1_source_domain", "text": "Scotland", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538709.9642992, "kind": "layer1_source_domain", "text": "England", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538709.968956, "kind": "layer1_source_domain", "text": "consecutive victories", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538709.9733257, "kind": "layer1_source_domain", "text": "inside", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538709.9773035, "kind": "layer1_source_domain", "text": "the world", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.0883992, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.096028, "kind": "layer1_source_domain", "text": "soccer", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1025462, "kind": "layer1_source_domain", "text": "fan", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1069212, "kind": "layer1_source_domain", "text": "to become familiar with", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1111212, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1167686, "kind": "layer1_source_domain", "text": "stadium", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1226404, "kind": "layer1_source_domain", "text": "about", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1287355, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1325908, "kind": "layer1_source_domain", "text": "spectator", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1381733, "kind": "layer1_source_domain", "text": "to visit", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.145084, "kind": "layer1_source_domain", "text": "overwhelming", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1497056, "kind": "layer1_source_domain", "text": "away (game, goal, etc.)", "tagset_size": 232, "choice": {"label": "K5.1", "confidence": 0.35, "rationale": "keyword_sports_en"}}
+{"ts": 1777538722.1539724, "kind": "layer1_source_domain", "text": "large amount of money", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1585097, "kind": "layer1_source_domain", "text": "to be possible to say", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.16281, "kind": "layer1_source_domain", "text": "victory", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1666453, "kind": "layer1_source_domain", "text": "to raise", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1718783, "kind": "layer1_source_domain", "text": "World Cup (e.g. soccer)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1776495, "kind": "layer1_source_domain", "text": "overall victory", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1836312, "kind": "layer1_source_domain", "text": "mark (for quick identification or recognition)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1886926, "kind": "layer1_source_domain", "text": "to put up (a notice, sign, etc.)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.1942387, "kind": "layer1_source_domain", "text": "starting in advance", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.199497, "kind": "layer1_source_domain", "text": "participation (in a tournament, match, race, etc.)", "tagset_size": 232, "choice": {"label": "K5.1", "confidence": 0.35, "rationale": "keyword_sports_en"}}
+{"ts": 1777538722.2052464, "kind": "layer1_source_domain", "text": "to be out of", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.209764, "kind": "layer1_source_domain", "text": "level", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.2138622, "kind": "layer1_source_domain", "text": "high", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.2180603, "kind": "layer1_source_domain", "text": "player (of a sport)", "tagset_size": 232, "choice": {"label": "K5.1", "confidence": 0.35, "rationale": "keyword_sports_en"}}
+{"ts": 1777538722.2218277, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.2284412, "kind": "layer1_source_domain", "text": "team", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.2352977, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.2403069, "kind": "layer1_source_domain", "text": "composition", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.2463799, "kind": "layer1_source_domain", "text": "thick", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.2514112, "kind": "layer1_source_domain", "text": "layer", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.256396, "kind": "layer1_source_domain", "text": "to aim at (for, to do, to become)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.2619634, "kind": "layer1_source_domain", "text": "strengthening", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.266464, "kind": "layer1_source_domain", "text": "to plan", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.271168, "kind": "layer1_source_domain", "text": "to reel", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.2738123, "kind": "layer1_source_domain", "text": "match", "tagset_size": 232, "choice": {"label": "K5.1", "confidence": 0.35, "rationale": "keyword_sports_en"}}
+{"ts": 1777538722.2784536, "kind": "layer1_source_domain", "text": "starting lineup", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.2826312, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.28729, "kind": "layer1_source_domain", "text": "to replace", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.2900085, "kind": "layer1_source_domain", "text": "overwhelming strength", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.294724, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.29824, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3070498, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.315343, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3216593, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3270977, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3317595, "kind": "layer1_source_domain", "text": "main force", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.335443, "kind": "layer1_source_domain", "text": "injury", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3404803, "kind": "layer1_source_domain", "text": "withdrawal", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3449714, "kind": "layer1_source_domain", "text": "companion", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.348046, "kind": "layer1_source_domain", "text": "to become", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3528533, "kind": "layer1_source_domain", "text": "to shoot (arrow, bolt, dart)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3571873, "kind": "layer1_source_domain", "text": "koto (13-stringed Japanese zither)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3618474, "kind": "layer1_source_domain", "text": "to (take out and) show", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3646464, "kind": "layer1_source_domain", "text": "year", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3693433, "kind": "layer1_source_domain", "text": "point", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3735332, "kind": "layer1_source_domain", "text": "Qatar", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.377899, "kind": "layer1_source_domain", "text": "mass meeting", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3829384, "kind": "layer1_source_domain", "text": "Germany", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3883924, "kind": "layer1_source_domain", "text": "Spain", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3939135, "kind": "layer1_source_domain", "text": "defeating", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.3975935, "kind": "layer1_source_domain", "text": "after that", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.403145, "kind": "layer1_source_domain", "text": "again", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4080417, "kind": "layer1_source_domain", "text": "furthermore", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4134257, "kind": "layer1_source_domain", "text": "last year", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4191346, "kind": "layer1_source_domain", "text": "Brazil", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4241502, "kind": "layer1_source_domain", "text": "historical", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4294565, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4343145, "kind": "layer1_source_domain", "text": "babysitting", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4389942, "kind": "layer1_source_domain", "text": "to harden", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4448638, "kind": "layer1_source_domain", "text": "chance to win", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.449767, "kind": "layer1_source_domain", "text": "to peep (through)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4557493, "kind": "layer1_source_domain", "text": "the defensive", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4630861, "kind": "layer1_source_domain", "text": "now", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4693227, "kind": "layer1_source_domain", "text": "period of time", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4744382, "kind": "layer1_source_domain", "text": "to be due to", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4804468, "kind": "layer1_source_domain", "text": "change", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4872196, "kind": "layer1_source_domain", "text": "hegemony", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4914112, "kind": "layer1_source_domain", "text": "to clasp", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4948993, "kind": "layer1_source_domain", "text": "evolution", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.4994078, "kind": "layer1_source_domain", "text": "pointing out", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.5048797, "kind": "layer1_source_domain", "text": "decision of a contest", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.508968, "kind": "layer1_source_domain", "text": "tournament", "tagset_size": 232, "choice": {"label": "K5.1", "confidence": 0.35, "rationale": "keyword_sports_en"}}
+{"ts": 1777538722.514003, "kind": "layer1_source_domain", "text": "first match (in a series)", "tagset_size": 232, "choice": {"label": "K5.1", "confidence": 0.35, "rationale": "keyword_sports_en"}}
+{"ts": 1777538722.5189621, "kind": "layer1_source_domain", "text": "wall", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.522761, "kind": "layer1_source_domain", "text": "breaking through", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.527732, "kind": "layer1_source_domain", "text": "best", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.5307922, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.5370736, "kind": "layer1_source_domain", "text": "best", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.540286, "kind": "layer1_source_domain", "text": "beginning", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.545789, "kind": "layer1_source_domain", "text": "surprise", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.5525417, "kind": "layer1_source_domain", "text": "voice", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.5563028, "kind": "layer1_source_domain", "text": "to be", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.561199, "kind": "layer1_source_domain", "text": "raising the curtain", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.5653856, "kind": "layer1_source_domain", "text": "just before", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.578183, "kind": "layer1_source_domain", "text": "to be temperate in", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.5890727, "kind": "layer1_source_domain", "text": "expectation", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.5954072, "kind": "layer1_source_domain", "text": "to rise", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.599062, "kind": "layer1_source_domain", "text": "to think", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.603389, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6094086, "kind": "layer1_source_domain", "text": "league", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6131535, "kind": "layer1_source_domain", "text": "battle", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6182685, "kind": "layer1_source_domain", "text": "group (usu. of people)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6222134, "kind": "layer1_source_domain", "text": "one's house", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6277769, "kind": "layer1_source_domain", "text": "superior (in rank)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6312304, "kind": "layer1_source_domain", "text": "advance (into a new market, industry, etc.)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.637578, "kind": "layer1_source_domain", "text": "probability", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6432905, "kind": "layer1_source_domain", "text": "one (esp. of two)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6551108, "kind": "layer1_source_domain", "text": "order", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6606338, "kind": "layer1_source_domain", "text": "component", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6646686, "kind": "layer1_source_domain", "text": "case", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6702235, "kind": "layer1_source_domain", "text": "passing through (a tunnel, station, town, etc.)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.677505, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.686047, "kind": "layer1_source_domain", "text": "that is to say", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6913412, "kind": "layer1_source_domain", "text": "Morocco", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.6970692, "kind": "layer1_source_domain", "text": "assembly hall", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7027256, "kind": "layer1_source_domain", "text": "Mexico", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7071278, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7128372, "kind": "layer1_source_domain", "text": "(United States of) America", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7186377, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7232606, "kind": "layer1_source_domain", "text": "of course", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7294362, "kind": "layer1_source_domain", "text": "experience", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7386975, "kind": "layer1_source_domain", "text": "actual place", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7421236, "kind": "layer1_source_domain", "text": "base (of operations)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.747312, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7515752, "kind": "layer1_source_domain", "text": "comparatively", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7562084, "kind": "layer1_source_domain", "text": "near", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.762004, "kind": "layer1_source_domain", "text": "good", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7658293, "kind": "layer1_source_domain", "text": "climate", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7718241, "kind": "layer1_source_domain", "text": "elevation", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7773345, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7814033, "kind": "layer1_source_domain", "text": "force", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7858524, "kind": "layer1_source_domain", "text": "show (of power, ability, etc.)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7901425, "kind": "layer1_source_domain", "text": "environment", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.793919, "kind": "layer1_source_domain", "text": "play", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.7974596, "kind": "layer1_source_domain", "text": "to enter", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8020608, "kind": "layer1_source_domain", "text": "possibility", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.804939, "kind": "layer1_source_domain", "text": "combination", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8092976, "kind": "layer1_source_domain", "text": "place", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8140304, "kind": "layer1_source_domain", "text": "plural", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.819726, "kind": "layer1_source_domain", "text": "to wring (towel, rag)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.823964, "kind": "layer1_source_domain", "text": "always", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8298957, "kind": "layer1_source_domain", "text": "fighting (against)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.833683, "kind": "layer1_source_domain", "text": "Mexico City", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8367283, "kind": "layer1_source_domain", "text": "Canada", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8405674, "kind": "layer1_source_domain", "text": "Vancouver", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8454554, "kind": "layer1_source_domain", "text": "San Francisco", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8487957, "kind": "layer1_source_domain", "text": "Boston", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8534138, "kind": "layer1_source_domain", "text": "New York", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8593378, "kind": "layer1_source_domain", "text": "outskirts", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8634079, "kind": "layer1_source_domain", "text": "New Jersey", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8690906, "kind": "layer1_source_domain", "text": "to be decided", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.876341, "kind": "layer1_source_domain", "text": "first (of all)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8819816, "kind": "layer1_source_domain", "text": "within", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8879192, "kind": "layer1_source_domain", "text": "securing", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8931637, "kind": "layer1_source_domain", "text": "to make war (on)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.8975263, "kind": "layer1_source_domain", "text": "to be tied together", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9011037, "kind": "layer1_source_domain", "text": "Iran", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9061887, "kind": "layer1_source_domain", "text": "state of things", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9118173, "kind": "layer1_source_domain", "text": "influence", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.915276, "kind": "layer1_source_domain", "text": "activity (esp. energetic or successful)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9190154, "kind": "layer1_source_domain", "text": "enjoyment", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.923039, "kind": "layer1_source_domain", "text": "spirit", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9286535, "kind": "layer1_source_domain", "text": "host country (e.g. for a conference)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9350376, "kind": "layer1_source_domain", "text": "severe", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9394104, "kind": "layer1_source_domain", "text": "confrontation", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9466648, "kind": "layer1_source_domain", "text": "exceedingly", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9528928, "kind": "layer1_source_domain", "text": "exceptional", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9561708, "kind": "layer1_source_domain", "text": "situation", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9638581, "kind": "layer1_source_domain", "text": "call", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9726748, "kind": "layer1_source_domain", "text": "preparation", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9812522, "kind": "layer1_source_domain", "text": "to be ready", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9880323, "kind": "layer1_source_domain", "text": "to do up (hair)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538722.9961061, "kind": "layer1_source_domain", "text": "subject", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0096307, "kind": "layer1_source_domain", "text": "everything", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.017803, "kind": "layer1_source_domain", "text": "to perform", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0225732, "kind": "layer1_source_domain", "text": "to win through (e.g. to finals)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0300305, "kind": "layer1_source_domain", "text": "for example", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0352168, "kind": "layer1_source_domain", "text": "each", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0381403, "kind": "layer1_source_domain", "text": "to advance", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0458436, "kind": "layer1_source_domain", "text": "founding of a nation", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0528367, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0576265, "kind": "layer1_source_domain", "text": "independence", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.062048, "kind": "layer1_source_domain", "text": "memorial day", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0654325, "kind": "layer1_source_domain", "text": "previous day", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0719218, "kind": "layer1_source_domain", "text": "Dallas (US)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0771453, "kind": "layer1_source_domain", "text": "direct", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0826437, "kind": "layer1_source_domain", "text": "to take (seat, position, course, office, etc.)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.088766, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.093902, "kind": "layer1_source_domain", "text": "international", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.0971649, "kind": "layer1_source_domain", "text": "league", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.10358, "kind": "layer1_source_domain", "text": "to want", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1070633, "kind": "layer1_source_domain", "text": "to write (e.g. a letter)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1121333, "kind": "layer1_source_domain", "text": "to convey", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.115077, "kind": "layer1_source_domain", "text": "counter for months", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1188724, "kind": "layer1_source_domain", "text": "to cut", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1224506, "kind": "layer1_source_domain", "text": "many", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.12903, "kind": "layer1_source_domain", "text": "redoing", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1334333, "kind": "layer1_source_domain", "text": "to finish", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1384876, "kind": "layer1_source_domain", "text": "difficult", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1448605, "kind": "layer1_source_domain", "text": "judgment", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1495283, "kind": "layer1_source_domain", "text": "dead", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1553173, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1604962, "kind": "layer1_source_domain", "text": "Moon", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.164658, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.170904, "kind": "layer1_source_domain", "text": "to prepare", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1740062, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1791284, "kind": "layer1_source_domain", "text": "awarding", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.185813, "kind": "layer1_source_domain", "text": "human rights", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.1988945, "kind": "layer1_source_domain", "text": "group", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.2050297, "kind": "layer1_source_domain", "text": "criticism", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.2100132, "kind": "layer1_source_domain", "text": "to rise", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.2138417, "kind": "layer1_source_domain", "text": "several months", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.219896, "kind": "layer1_source_domain", "text": "to be involved (in)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.224125, "kind": "layer1_source_domain", "text": "biggest", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.2287993, "kind": "layer1_source_domain", "text": "event", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.2320845, "kind": "layer1_source_domain", "text": "shadow", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.237783, "kind": "layer1_source_domain", "text": "to drop", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.2449722, "kind": "layer1_source_domain", "text": "state", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.250963, "kind": "layer1_source_domain", "text": "irony", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.2555408, "kind": "layer1_source_domain", "text": "to feel", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.2609172, "kind": "layer1_source_domain", "text": "companion", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.2654772, "kind": "layer1_source_domain", "text": "concentration (on a task)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.2705545, "kind": "layer1_source_domain", "text": "\"as above\" mark", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.2743564, "kind": "layer1_source_domain", "text": "to make", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777538723.2808878, "kind": "layer1_source_domain", "text": "notice", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539297.0656197, "kind": "layer1_source_domain", "text": "living room (Western style)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539297.070956, "kind": "layer1_source_domain", "text": "boxing", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539297.0741138, "kind": "layer1_source_domain", "text": "death", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539297.0785377, "kind": "layer1_source_domain", "text": "to arrive at (e.g. a decision)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539297.08178, "kind": "layer1_source_domain", "text": "accident", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539297.0854938, "kind": "layer1_source_domain", "text": "to follow", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539297.0893419, "kind": "layer1_source_domain", "text": "to shoot (arrow, bolt, dart)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3239691, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3282402, "kind": "layer1_source_domain", "text": "(period of) a year", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3308275, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3334394, "kind": "layer1_source_domain", "text": "death", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.337625, "kind": "layer1_source_domain", "text": "safety", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3406813, "kind": "layer1_source_domain", "text": "face", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.344598, "kind": "layer1_source_domain", "text": "game", "tagset_size": 232, "choice": {"label": "K5.1", "confidence": 0.35, "rationale": "keyword_sports_en"}}
+{"ts": 1777539306.3475428, "kind": "layer1_source_domain", "text": "foundation", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.351063, "kind": "layer1_source_domain", "text": "to shake", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3553965, "kind": "layer1_source_domain", "text": "situation", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.358078, "kind": "layer1_source_domain", "text": "to become", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3614671, "kind": "layer1_source_domain", "text": "appearing that", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3643904, "kind": "layer1_source_domain", "text": "to do", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3676739, "kind": "layer1_source_domain", "text": "inside", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3719099, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.374759, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.378286, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3814862, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3850565, "kind": "layer1_source_domain", "text": "title match", "tagset_size": 232, "choice": {"label": "K5.1", "confidence": 0.35, "rationale": "keyword_sports_en"}}
+{"ts": 1777539306.3889055, "kind": "layer1_source_domain", "text": "immediately following", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3917377, "kind": "layer1_source_domain", "text": "consciousness", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3948352, "kind": "layer1_source_domain", "text": "to lose", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.3982356, "kind": "layer1_source_domain", "text": "urgency", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.4018183, "kind": "layer1_source_domain", "text": "transportation", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.4055984, "kind": "layer1_source_domain", "text": "one life", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.408584, "kind": "layer1_source_domain", "text": "to narrowly escape (e.g. death)", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.4139123, "kind": "layer1_source_domain", "text": "person", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.4166758, "kind": "layer1_source_domain", "text": "left", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.4206963, "kind": "layer1_source_domain", "text": "half the body", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.4240544, "kind": "layer1_source_domain", "text": "paralysis", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.4279292, "kind": "layer1_source_domain", "text": "prognostic symptoms", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777539306.4314594, "kind": "layer1_source_domain", "text": "to remain", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777561519.9174745, "kind": "layer1_source_domain", "text": "cooked rice", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777561519.9191935, "kind": "layer1_source_domain", "text": "to eat", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777561519.9201946, "kind": "layer1_source_domain", "text": "bread", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777561519.9219217, "kind": "layer1_source_domain", "text": "school", "tagset_size": 232, "choice": {"label": "P1", "confidence": 0.35, "rationale": "keyword_education_en"}}
+{"ts": 1777561519.9230769, "kind": "layer1_source_domain", "text": "to go", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777561531.7816315, "kind": "layer1_source_domain", "text": "（stub）文脈における「ご飯」の抽象的な意味", "tagset_size": 232, "choice": {"label": "F1", "confidence": 0.35, "rationale": "keyword_food"}}
+{"ts": 1777561531.7850556, "kind": "layer1_source_domain", "text": "（stub）文脈における「食べる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "F1", "confidence": 0.35, "rationale": "keyword_food"}}
+{"ts": 1777561531.7892866, "kind": "layer1_source_domain", "text": "（stub）文脈における「パン」の抽象的な意味", "tagset_size": 232, "choice": {"label": "F1", "confidence": 0.35, "rationale": "keyword_food"}}
+{"ts": 1777561531.7930725, "kind": "layer1_source_domain", "text": "（stub）文脈における「食べる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "F1", "confidence": 0.35, "rationale": "keyword_food"}}
+{"ts": 1777561531.7980304, "kind": "layer1_source_domain", "text": "（stub）文脈における「学校」の抽象的な意味", "tagset_size": 232, "choice": {"label": "P1", "confidence": 0.35, "rationale": "keyword_education"}}
+{"ts": 1777561531.8030245, "kind": "layer1_source_domain", "text": "（stub）文脈における「行く」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562211.5518806, "kind": "layer1_source_domain", "text": "（stub）文脈における「言葉」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562211.554962, "kind": "layer1_source_domain", "text": "（stub）文脈における「刃」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562211.5569263, "kind": "layer1_source_domain", "text": "（stub）文脈における「刺さる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562215.0305572, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562215.0321002, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562215.0333283, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562215.0344303, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562215.035397, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562215.0481482, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562334.4197335, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562334.4238784, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562334.427966, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562334.4315205, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562334.4356728, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562334.43894, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.815882, "kind": "layer1_source_domain", "text": "（stub）文脈における「子ども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.821831, "kind": "layer1_source_domain", "text": "（stub）文脈における「自殺」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.8265467, "kind": "layer1_source_domain", "text": "（stub）文脈における「防止」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.831798, "kind": "layer1_source_domain", "text": "（stub）文脈における「向ける」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.836318, "kind": "layer1_source_domain", "text": "（stub）文脈における「こども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.8435795, "kind": "layer1_source_domain", "text": "（stub）文脈における「政策」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.8515465, "kind": "layer1_source_domain", "text": "（stub）文脈における「担当」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.858113, "kind": "layer1_source_domain", "text": "（stub）文脈における「大臣」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.8654015, "kind": "layer1_source_domain", "text": "（stub）文脈における「自治体」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.873747, "kind": "layer1_source_domain", "text": "（stub）文脈における「協議」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.8812876, "kind": "layer1_source_domain", "text": "（stub）文脈における「場」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.8879979, "kind": "layer1_source_domain", "text": "（stub）文脈における「リスク」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.8948696, "kind": "layer1_source_domain", "text": "（stub）文脈における「高い」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.9017768, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.911153, "kind": "layer1_source_domain", "text": "（stub）文脈における「子ども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.9185677, "kind": "layer1_source_domain", "text": "（stub）文脈における「早期」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.9245834, "kind": "layer1_source_domain", "text": "（stub）文脈における「把握」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.929714, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.9357896, "kind": "layer1_source_domain", "text": "（stub）文脈における「支援」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.94407, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.9497528, "kind": "layer1_source_domain", "text": "（stub）文脈における「ため」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.9556334, "kind": "layer1_source_domain", "text": "（stub）文脈における「学校」の抽象的な意味", "tagset_size": 232, "choice": {"label": "P1", "confidence": 0.35, "rationale": "keyword_education"}}
+{"ts": 1777562425.962859, "kind": "layer1_source_domain", "text": "（stub）文脈における「医療機関」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.9690099, "kind": "layer1_source_domain", "text": "（stub）文脈における「情報」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.976282, "kind": "layer1_source_domain", "text": "（stub）文脈における「共有」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.9833252, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.9891465, "kind": "layer1_source_domain", "text": "（stub）文脈における「対策」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562425.9959447, "kind": "layer1_source_domain", "text": "（stub）文脈における「行う」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.0019486, "kind": "layer1_source_domain", "text": "（stub）文脈における「協議会」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.0065696, "kind": "layer1_source_domain", "text": "（stub）文脈における「設置」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.0133333, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.020033, "kind": "layer1_source_domain", "text": "（stub）文脈における「要請」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.026926, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.0338154, "kind": "layer1_source_domain", "text": "（stub）文脈における「去年」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.0386243, "kind": "layer1_source_domain", "text": "（stub）文脈における「年間」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.044275, "kind": "layer1_source_domain", "text": "（stub）文脈における「自殺」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.0509787, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.056221, "kind": "layer1_source_domain", "text": "（stub）文脈における「小中高生」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.0636575, "kind": "layer1_source_domain", "text": "（stub）文脈における「統計」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.0702438, "kind": "layer1_source_domain", "text": "（stub）文脈における「ある」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.075582, "kind": "layer1_source_domain", "text": "（stub）文脈における「昭和」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.082742, "kind": "layer1_source_domain", "text": "（stub）文脈における「年」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.0897505, "kind": "layer1_source_domain", "text": "（stub）文脈における「以降」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.098294, "kind": "layer1_source_domain", "text": "（stub）文脈における「最も」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.1051288, "kind": "layer1_source_domain", "text": "（stub）文脈における「多い」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.1119163, "kind": "layer1_source_domain", "text": "（stub）文脈における「なる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.1186059, "kind": "layer1_source_domain", "text": "（stub）文脈における「中」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.1236577, "kind": "layer1_source_domain", "text": "（stub）文脈における「こども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.1285393, "kind": "layer1_source_domain", "text": "（stub）文脈における「家庭」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.1347475, "kind": "layer1_source_domain", "text": "（stub）文脈における「月」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.140597, "kind": "layer1_source_domain", "text": "（stub）文脈における「日」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.146209, "kind": "layer1_source_domain", "text": "（stub）文脈における「国」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.1529353, "kind": "layer1_source_domain", "text": "（stub）文脈における「地方」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.1590698, "kind": "layer1_source_domain", "text": "（stub）文脈における「協議」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.1639924, "kind": "layer1_source_domain", "text": "（stub）文脈における「場」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.170292, "kind": "layer1_source_domain", "text": "（stub）文脈における「開く」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.176734, "kind": "layer1_source_domain", "text": "（stub）文脈における「こども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.181914, "kind": "layer1_source_domain", "text": "（stub）文脈における「政策」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.1911824, "kind": "layer1_source_domain", "text": "（stub）文脈における「担当」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.196724, "kind": "layer1_source_domain", "text": "（stub）文脈における「大臣」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.2028568, "kind": "layer1_source_domain", "text": "（stub）文脈における「全国」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.2105443, "kind": "layer1_source_domain", "text": "（stub）文脈における「知事」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.2179267, "kind": "layer1_source_domain", "text": "（stub）文脈における「会」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.225596, "kind": "layer1_source_domain", "text": "（stub）文脈における「全国」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.2333367, "kind": "layer1_source_domain", "text": "（stub）文脈における「市長」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.2407923, "kind": "layer1_source_domain", "text": "（stub）文脈における「会」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.247592, "kind": "layer1_source_domain", "text": "（stub）文脈における「代表」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.2539034, "kind": "layer1_source_domain", "text": "（stub）文脈における「出席」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562426.2627556, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562606.8993514, "kind": "layer1_source_domain", "text": "（stub）文脈における「言葉」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562606.902859, "kind": "layer1_source_domain", "text": "（stub）文脈における「刃」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562606.9046755, "kind": "layer1_source_domain", "text": "（stub）文脈における「刺さる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562784.7854426, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562784.7868528, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562784.7885404, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562784.7897427, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562784.7909498, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562784.79223, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.2836149, "kind": "layer1_source_domain", "text": "（stub）文脈における「子ども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.285949, "kind": "layer1_source_domain", "text": "（stub）文脈における「自殺」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.2875333, "kind": "layer1_source_domain", "text": "（stub）文脈における「防止」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.290033, "kind": "layer1_source_domain", "text": "（stub）文脈における「向ける」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.2920368, "kind": "layer1_source_domain", "text": "（stub）文脈における「こども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.294033, "kind": "layer1_source_domain", "text": "（stub）文脈における「政策」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.2956817, "kind": "layer1_source_domain", "text": "（stub）文脈における「担当」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.2972682, "kind": "layer1_source_domain", "text": "（stub）文脈における「大臣」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.2988539, "kind": "layer1_source_domain", "text": "（stub）文脈における「自治体」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3016343, "kind": "layer1_source_domain", "text": "（stub）文脈における「協議」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3041291, "kind": "layer1_source_domain", "text": "（stub）文脈における「場」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3066678, "kind": "layer1_source_domain", "text": "（stub）文脈における「リスク」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3095994, "kind": "layer1_source_domain", "text": "（stub）文脈における「高い」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3124852, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3151374, "kind": "layer1_source_domain", "text": "（stub）文脈における「子ども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3180678, "kind": "layer1_source_domain", "text": "（stub）文脈における「早期」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3200727, "kind": "layer1_source_domain", "text": "（stub）文脈における「把握」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3224192, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3255882, "kind": "layer1_source_domain", "text": "（stub）文脈における「支援」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3281097, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3303058, "kind": "layer1_source_domain", "text": "（stub）文脈における「ため」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.333173, "kind": "layer1_source_domain", "text": "（stub）文脈における「学校」の抽象的な意味", "tagset_size": 232, "choice": {"label": "P1", "confidence": 0.35, "rationale": "keyword_education"}}
+{"ts": 1777562814.336205, "kind": "layer1_source_domain", "text": "（stub）文脈における「医療機関」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3390965, "kind": "layer1_source_domain", "text": "（stub）文脈における「情報」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3417332, "kind": "layer1_source_domain", "text": "（stub）文脈における「共有」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3444, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.346943, "kind": "layer1_source_domain", "text": "（stub）文脈における「対策」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3496714, "kind": "layer1_source_domain", "text": "（stub）文脈における「行う」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3520415, "kind": "layer1_source_domain", "text": "（stub）文脈における「協議会」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3541145, "kind": "layer1_source_domain", "text": "（stub）文脈における「設置」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3564847, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3592281, "kind": "layer1_source_domain", "text": "（stub）文脈における「要請」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3620012, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3642926, "kind": "layer1_source_domain", "text": "（stub）文脈における「去年」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3687794, "kind": "layer1_source_domain", "text": "（stub）文脈における「年間」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3723261, "kind": "layer1_source_domain", "text": "（stub）文脈における「自殺」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3745425, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3776798, "kind": "layer1_source_domain", "text": "（stub）文脈における「小中高生」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3812404, "kind": "layer1_source_domain", "text": "（stub）文脈における「統計」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3839643, "kind": "layer1_source_domain", "text": "（stub）文脈における「ある」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3869312, "kind": "layer1_source_domain", "text": "（stub）文脈における「昭和」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3896844, "kind": "layer1_source_domain", "text": "（stub）文脈における「年」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.393455, "kind": "layer1_source_domain", "text": "（stub）文脈における「以降」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.3968954, "kind": "layer1_source_domain", "text": "（stub）文脈における「最も」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.399904, "kind": "layer1_source_domain", "text": "（stub）文脈における「多い」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4030614, "kind": "layer1_source_domain", "text": "（stub）文脈における「なる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4055982, "kind": "layer1_source_domain", "text": "（stub）文脈における「中」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4080784, "kind": "layer1_source_domain", "text": "（stub）文脈における「こども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.410975, "kind": "layer1_source_domain", "text": "（stub）文脈における「家庭」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4130437, "kind": "layer1_source_domain", "text": "（stub）文脈における「月」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.414986, "kind": "layer1_source_domain", "text": "（stub）文脈における「日」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4179776, "kind": "layer1_source_domain", "text": "（stub）文脈における「国」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4208274, "kind": "layer1_source_domain", "text": "（stub）文脈における「地方」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4228883, "kind": "layer1_source_domain", "text": "（stub）文脈における「協議」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4259534, "kind": "layer1_source_domain", "text": "（stub）文脈における「場」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4303396, "kind": "layer1_source_domain", "text": "（stub）文脈における「開く」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4332795, "kind": "layer1_source_domain", "text": "（stub）文脈における「こども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4361496, "kind": "layer1_source_domain", "text": "（stub）文脈における「政策」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4382489, "kind": "layer1_source_domain", "text": "（stub）文脈における「担当」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4406643, "kind": "layer1_source_domain", "text": "（stub）文脈における「大臣」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4446168, "kind": "layer1_source_domain", "text": "（stub）文脈における「全国」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4466696, "kind": "layer1_source_domain", "text": "（stub）文脈における「知事」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4488068, "kind": "layer1_source_domain", "text": "（stub）文脈における「会」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.452128, "kind": "layer1_source_domain", "text": "（stub）文脈における「全国」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4546745, "kind": "layer1_source_domain", "text": "（stub）文脈における「市長」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.456843, "kind": "layer1_source_domain", "text": "（stub）文脈における「会」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4620485, "kind": "layer1_source_domain", "text": "（stub）文脈における「代表」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4669855, "kind": "layer1_source_domain", "text": "（stub）文脈における「出席」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777562814.4703946, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.933495, "kind": "layer1_source_domain", "text": "（stub）文脈における「上」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.9368954, "kind": "layer1_source_domain", "text": "（stub）文脈における「自殺」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.9399734, "kind": "layer1_source_domain", "text": "（stub）文脈における「リスク」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.9442098, "kind": "layer1_source_domain", "text": "（stub）文脈における「高い」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.9469905, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.9507616, "kind": "layer1_source_domain", "text": "（stub）文脈における「子ども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.9540193, "kind": "layer1_source_domain", "text": "（stub）文脈における「早期」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.9571433, "kind": "layer1_source_domain", "text": "（stub）文脈における「把握」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.9601157, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.963497, "kind": "layer1_source_domain", "text": "（stub）文脈における「支援」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.967182, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.9708433, "kind": "layer1_source_domain", "text": "（stub）文脈における「ため」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.9745107, "kind": "layer1_source_domain", "text": "（stub）文脈における「学校」の抽象的な意味", "tagset_size": 232, "choice": {"label": "P1", "confidence": 0.35, "rationale": "keyword_education"}}
+{"ts": 1777563007.9781404, "kind": "layer1_source_domain", "text": "（stub）文脈における「医療機関」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.981428, "kind": "layer1_source_domain", "text": "（stub）文脈における「民間」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.984686, "kind": "layer1_source_domain", "text": "（stub）文脈における「団体」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.9877107, "kind": "layer1_source_domain", "text": "（stub）文脈における「守秘」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.991975, "kind": "layer1_source_domain", "text": "（stub）文脈における「義務」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.9952433, "kind": "layer1_source_domain", "text": "（stub）文脈における「守る」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563007.997834, "kind": "layer1_source_domain", "text": "（stub）文脈における「情報」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0014272, "kind": "layer1_source_domain", "text": "（stub）文脈における「共有」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.004142, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0066535, "kind": "layer1_source_domain", "text": "（stub）文脈における「対策」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0119486, "kind": "layer1_source_domain", "text": "（stub）文脈における「行う」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0154254, "kind": "layer1_source_domain", "text": "（stub）文脈における「協議会」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0179148, "kind": "layer1_source_domain", "text": "（stub）文脈における「設置」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0203986, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0234282, "kind": "layer1_source_domain", "text": "（stub）文脈における「要請」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0287519, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0320082, "kind": "layer1_source_domain", "text": "（stub）文脈における「こども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0361187, "kind": "layer1_source_domain", "text": "（stub）文脈における「家庭」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0392947, "kind": "layer1_source_domain", "text": "（stub）文脈における「今後」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0432615, "kind": "layer1_source_domain", "text": "（stub）文脈における「協議会」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.046399, "kind": "layer1_source_domain", "text": "（stub）文脈における「運営」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0505555, "kind": "layer1_source_domain", "text": "（stub）文脈における「関する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0541797, "kind": "layer1_source_domain", "text": "（stub）文脈における「ガイドライン」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0581357, "kind": "layer1_source_domain", "text": "（stub）文脈における「作成」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0620975, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0652711, "kind": "layer1_source_domain", "text": "（stub）文脈における「すべて」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0688865, "kind": "layer1_source_domain", "text": "（stub）文脈における「自治体」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0721467, "kind": "layer1_source_domain", "text": "（stub）文脈における「対象」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0758722, "kind": "layer1_source_domain", "text": "（stub）文脈における「説明会」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0789628, "kind": "layer1_source_domain", "text": "（stub）文脈における「開く」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0823505, "kind": "layer1_source_domain", "text": "（stub）文脈における「ほか」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0865166, "kind": "layer1_source_domain", "text": "（stub）文脈における「必要」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.089212, "kind": "layer1_source_domain", "text": "（stub）文脈における「応ずる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.09266, "kind": "layer1_source_domain", "text": "（stub）文脈における「職員」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.0964363, "kind": "layer1_source_domain", "text": "（stub）文脈における「派遣」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.1000252, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.1045916, "kind": "layer1_source_domain", "text": "（stub）文脈における「こと」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.1078434, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563008.1115026, "kind": "layer1_source_domain", "text": "（stub）文脈における「いる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563199.230564, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.413375, "kind": "layer1_source_domain", "text": "（stub）文脈における「中」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.4279127, "kind": "layer1_source_domain", "text": "（stub）文脈における「大臣」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.4533372, "kind": "layer1_source_domain", "text": "（stub）文脈における「極めて」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.481814, "kind": "layer1_source_domain", "text": "（stub）文脈における「現実」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.4913614, "kind": "layer1_source_domain", "text": "（stub）文脈における「対する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.519538, "kind": "layer1_source_domain", "text": "（stub）文脈における「国」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.5333476, "kind": "layer1_source_domain", "text": "（stub）文脈における「地方」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.5597558, "kind": "layer1_source_domain", "text": "（stub）文脈における「以上」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.5824509, "kind": "layer1_source_domain", "text": "（stub）文脈における「危機感」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.5949655, "kind": "layer1_source_domain", "text": "（stub）文脈における「持つ」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6017587, "kind": "layer1_source_domain", "text": "（stub）文脈における「向き合う」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6066778, "kind": "layer1_source_domain", "text": "（stub）文脈における「なる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6114576, "kind": "layer1_source_domain", "text": "（stub）文脈における「国」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6178014, "kind": "layer1_source_domain", "text": "（stub）文脈における「地方」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.62027, "kind": "layer1_source_domain", "text": "（stub）文脈における「総力」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.623408, "kind": "layer1_source_domain", "text": "（stub）文脈における「結集」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6259174, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6294491, "kind": "layer1_source_domain", "text": "（stub）文脈における「子ども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6321383, "kind": "layer1_source_domain", "text": "（stub）文脈における「命」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6360998, "kind": "layer1_source_domain", "text": "（stub）文脈における「徹底的」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6417077, "kind": "layer1_source_domain", "text": "（stub）文脈における「守る」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.648629, "kind": "layer1_source_domain", "text": "（stub）文脈における「抜く」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6509683, "kind": "layer1_source_domain", "text": "（stub）文脈における「決意」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6537986, "kind": "layer1_source_domain", "text": "（stub）文脈における「取り組む」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6586452, "kind": "layer1_source_domain", "text": "（stub）文脈における「いく」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6643744, "kind": "layer1_source_domain", "text": "（stub）文脈における「述べる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6665676, "kind": "layer1_source_domain", "text": "（stub）文脈における「上」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6690342, "kind": "layer1_source_domain", "text": "（stub）文脈における「自殺」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.67129, "kind": "layer1_source_domain", "text": "（stub）文脈における「リスク」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6744022, "kind": "layer1_source_domain", "text": "（stub）文脈における「高い」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.677432, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6820285, "kind": "layer1_source_domain", "text": "（stub）文脈における「子ども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6842628, "kind": "layer1_source_domain", "text": "（stub）文脈における「早期」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6865666, "kind": "layer1_source_domain", "text": "（stub）文脈における「把握」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6892395, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.692242, "kind": "layer1_source_domain", "text": "（stub）文脈における「支援」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6946518, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.6974015, "kind": "layer1_source_domain", "text": "（stub）文脈における「ため」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.7008667, "kind": "layer1_source_domain", "text": "（stub）文脈における「学校」の抽象的な意味", "tagset_size": 232, "choice": {"label": "P1", "confidence": 0.35, "rationale": "keyword_education"}}
+{"ts": 1777563226.7039475, "kind": "layer1_source_domain", "text": "（stub）文脈における「医療機関」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.7089946, "kind": "layer1_source_domain", "text": "（stub）文脈における「民間」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.712949, "kind": "layer1_source_domain", "text": "（stub）文脈における「団体」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.7171164, "kind": "layer1_source_domain", "text": "（stub）文脈における「守秘」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.7209997, "kind": "layer1_source_domain", "text": "（stub）文脈における「義務」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.724848, "kind": "layer1_source_domain", "text": "（stub）文脈における「守る」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.7282774, "kind": "layer1_source_domain", "text": "（stub）文脈における「情報」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.7314913, "kind": "layer1_source_domain", "text": "（stub）文脈における「共有」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.7350042, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.7385395, "kind": "layer1_source_domain", "text": "（stub）文脈における「対策」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.742183, "kind": "layer1_source_domain", "text": "（stub）文脈における「行う」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.7454052, "kind": "layer1_source_domain", "text": "（stub）文脈における「協議会」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.7490666, "kind": "layer1_source_domain", "text": "（stub）文脈における「設置」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.752712, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.7561326, "kind": "layer1_source_domain", "text": "（stub）文脈における「要請」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563226.7597744, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.1140103, "kind": "layer1_source_domain", "text": "（stub）文脈における「中」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.123747, "kind": "layer1_source_domain", "text": "（stub）文脈における「大臣」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.1322029, "kind": "layer1_source_domain", "text": "（stub）文脈における「極めて」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.1397123, "kind": "layer1_source_domain", "text": "（stub）文脈における「現実」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.1451404, "kind": "layer1_source_domain", "text": "（stub）文脈における「対する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.1563318, "kind": "layer1_source_domain", "text": "（stub）文脈における「国」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.164928, "kind": "layer1_source_domain", "text": "（stub）文脈における「地方」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.17308, "kind": "layer1_source_domain", "text": "（stub）文脈における「以上」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.1812186, "kind": "layer1_source_domain", "text": "（stub）文脈における「危機感」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.1888757, "kind": "layer1_source_domain", "text": "（stub）文脈における「持つ」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.1974537, "kind": "layer1_source_domain", "text": "（stub）文脈における「向き合う」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.2062008, "kind": "layer1_source_domain", "text": "（stub）文脈における「なる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.215182, "kind": "layer1_source_domain", "text": "（stub）文脈における「国」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.2321336, "kind": "layer1_source_domain", "text": "（stub）文脈における「地方」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.2409747, "kind": "layer1_source_domain", "text": "（stub）文脈における「総力」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.2475164, "kind": "layer1_source_domain", "text": "（stub）文脈における「結集」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.255211, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.2640586, "kind": "layer1_source_domain", "text": "（stub）文脈における「子ども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.2714252, "kind": "layer1_source_domain", "text": "（stub）文脈における「命」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.276346, "kind": "layer1_source_domain", "text": "（stub）文脈における「徹底的」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.2833626, "kind": "layer1_source_domain", "text": "（stub）文脈における「守る」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.2900465, "kind": "layer1_source_domain", "text": "（stub）文脈における「抜く」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.2981184, "kind": "layer1_source_domain", "text": "（stub）文脈における「決意」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.307285, "kind": "layer1_source_domain", "text": "（stub）文脈における「取り組む」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.317376, "kind": "layer1_source_domain", "text": "（stub）文脈における「いく」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.328362, "kind": "layer1_source_domain", "text": "（stub）文脈における「述べる」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.3359497, "kind": "layer1_source_domain", "text": "（stub）文脈における「上」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.3411412, "kind": "layer1_source_domain", "text": "（stub）文脈における「自殺」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.3490145, "kind": "layer1_source_domain", "text": "（stub）文脈における「リスク」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.355688, "kind": "layer1_source_domain", "text": "（stub）文脈における「高い」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.36395, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.3717725, "kind": "layer1_source_domain", "text": "（stub）文脈における「子ども」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.3790336, "kind": "layer1_source_domain", "text": "（stub）文脈における「早期」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.3868885, "kind": "layer1_source_domain", "text": "（stub）文脈における「把握」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.3939502, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.4010277, "kind": "layer1_source_domain", "text": "（stub）文脈における「支援」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.4087532, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.416189, "kind": "layer1_source_domain", "text": "（stub）文脈における「ため」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.4223816, "kind": "layer1_source_domain", "text": "（stub）文脈における「学校」の抽象的な意味", "tagset_size": 232, "choice": {"label": "P1", "confidence": 0.35, "rationale": "keyword_education"}}
+{"ts": 1777563376.4312937, "kind": "layer1_source_domain", "text": "（stub）文脈における「医療機関」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.439052, "kind": "layer1_source_domain", "text": "（stub）文脈における「民間」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.4499683, "kind": "layer1_source_domain", "text": "（stub）文脈における「団体」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.458602, "kind": "layer1_source_domain", "text": "（stub）文脈における「守秘」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.4712563, "kind": "layer1_source_domain", "text": "（stub）文脈における「義務」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.4900665, "kind": "layer1_source_domain", "text": "（stub）文脈における「守る」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.4988332, "kind": "layer1_source_domain", "text": "（stub）文脈における「情報」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.50811, "kind": "layer1_source_domain", "text": "（stub）文脈における「共有」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.5147555, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.5214567, "kind": "layer1_source_domain", "text": "（stub）文脈における「対策」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.5274425, "kind": "layer1_source_domain", "text": "（stub）文脈における「行う」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.5334601, "kind": "layer1_source_domain", "text": "（stub）文脈における「協議会」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.5395594, "kind": "layer1_source_domain", "text": "（stub）文脈における「設置」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.5466046, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.551346, "kind": "layer1_source_domain", "text": "（stub）文脈における「要請」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563376.5580893, "kind": "layer1_source_domain", "text": "（stub）文脈における「する」の抽象的な意味", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563984.3797925, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777563984.3813994, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777564018.9444525, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777564018.9474823, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777564037.8590035, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777564037.8604226, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777564037.8620317, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777564037.8642159, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777564037.8656852, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777564038.0597208, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777564155.467628, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777568383.48614, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777568383.4881861, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777568383.490213, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777569925.0342338, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777569925.0381517, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777570059.5193172, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777570059.524556, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777570059.5295868, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}
+{"ts": 1777570059.5374596, "kind": "layer1_source_domain", "text": "", "tagset_size": 232, "choice": {"label": "Z99", "confidence": 0.1, "rationale": "stub_default"}}

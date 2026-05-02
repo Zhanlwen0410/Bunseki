@@ -1,6 +1,7 @@
 import { Box, Skeleton, Typography, useTheme } from '@mui/material'
 import { Suspense, lazy, useMemo } from 'react'
 import type { Data, Layout } from 'plotly.js'
+import { ErrorBoundary } from '../common/ErrorBoundary'
 
 const Plot = lazy(() => import('react-plotly.js'))
 
@@ -66,15 +67,17 @@ export function DomainBarPlot({
 
   return (
     <Box sx={{ width: '100%', minHeight: 360 }}>
-      <Suspense fallback={<Skeleton variant="rectangular" height={360} animation="wave" />}>
-        <Plot
-          data={data}
-          layout={layout}
-          config={{ displayModeBar: true, responsive: true }}
-          style={{ width: '100%', height: 360 }}
-          useResizeHandler
-        />
-      </Suspense>
+      <ErrorBoundary fallback={<Typography color="error">Chart failed to render. Please continue with table data.</Typography>}>
+        <Suspense fallback={<Skeleton variant="rectangular" height={360} animation="wave" />}>
+          <Plot
+            data={data}
+            layout={layout}
+            config={{ displayModeBar: true, responsive: true }}
+            style={{ width: '100%', height: 360 }}
+            useResizeHandler
+          />
+        </Suspense>
+      </ErrorBoundary>
     </Box>
   )
 }

@@ -6,7 +6,6 @@ set "INTERP="
 where node >nul 2>nul
 if errorlevel 1 (
     echo Node.js is required for the Electron desktop. Install from https://nodejs.org/
-    echo Legacy Tk GUI: run_legacy.bat ^(Python + SudachiPy still required^)
     pause
     exit /b 1
 )
@@ -39,6 +38,8 @@ if "%INTERP%"=="" (
     echo Try one of these:
     echo   python -m pip install -r requirements.txt
     echo   py -m pip install -r requirements.txt
+    echo.
+    echo Note: On Python 3.14, do NOT install requirements-gui.txt ^(legacy WebView may pull pythonnet^).
     echo Then re-run run.bat.
     pause
     exit /b 1
@@ -95,6 +96,7 @@ if not "!APP_EXIT!"=="0" (
     echo.
     echo Desktop exited with error code !APP_EXIT!.
     echo Ensure Python deps: pip install -r requirements.txt
+    echo Python 3.14 users: keep to core deps and Electron path.
     echo Optional: set WMIX_PYTHON=path\to\python.exe if the wrong interpreter is used.
     pause
 )

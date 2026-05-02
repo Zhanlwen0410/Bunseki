@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import re
 from bisect import bisect_right
 from collections import Counter

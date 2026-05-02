@@ -1,5 +1,16 @@
-SudachiPy>=0.6.8
-SudachiDict-core>=20230110
-pywebview>=5.1
-fastapi>=0.110
-uvicorn[standard]>=0.27
+SudachiPy>=0.6.8,<0.7
+SudachiDict-core>=20230110,<20240000
+fastapi>=0.110,<0.116
+uvicorn[standard]>=0.27,<0.34
+torch>=2.2,<2.7
+transformers>=4.40,<4.50
+wn
+fugashi>=1.3
+unidic-lite>=1.0.8
+
+# LLM API clients (optional -- only needed for LLM-powered MIPVU metaphor layer)
+# Install the providers you intend to use:
+# openai>=1.0,<2.0              # OpenAI / DeepSeek (OpenAI-compatible API)
+# google-generativeai>=0.8      # Google Gemini
+# anthropic>=0.30               # Claude (Anthropic)
+# llama-cpp-python              # Local offline LLM (heavy, install manually)

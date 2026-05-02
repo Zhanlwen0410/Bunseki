@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Dict
 
 
@@ -63,7 +65,8 @@ TRANSLATIONS: Dict[str, Dict[str, str]] = {
     "no_analysis": {"zh": "\u8bf7\u5148\u6267\u884c\u5206\u6790\u3002", "ja": "\u5148\u306b\u5206\u6790\u3092\u5b9f\u884c\u3057\u3066\u304f\u3060\u3055\u3044\u3002", "en": "Please run analysis first."},
     "analysis_failed": {"zh": "\u5206\u6790\u5931\u8d25", "ja": "\u5206\u6790\u5931\u6557", "en": "Analysis failed"},
     "open_failed": {"zh": "\u6253\u5f00\u5931\u8d25", "ja": "\u8aad\u8fbc\u5931\u6557", "en": "Open Failed"},
-    "export_failed": {"zh": "\u5bfc\u51fa\u5931\u8d25", "ja": "\u51fa\u529b\u5931\u6557", "en": "Export Failed"}
+    "export_failed": {"zh": "\u5bfc\u51fa\u5931\u8d25", "ja": "\u51fa\u529b\u5931\u6557", "en": "Export Failed"},
+    "select_domain_prompt": {"zh": "\u8bf7\u8f93\u5165\u76ee\u6807\u57df\u4ee3\u7801\uff08\u5982A1\u3001E4.1\uff09\uff1a", "ja": "\u79fb\u52d5\u5148\u306e\u9818\u57df\u30b3\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\uff08\u4f8b\uff1aA1\u3001E4.1\uff09\uff1a", "en": "Enter target domain code (e.g. A1, E4.1):"}
 }
 
 

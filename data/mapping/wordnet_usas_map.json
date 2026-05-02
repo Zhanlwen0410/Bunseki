@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "description": "Japanese WordNet (omw-ja:2.0) lemma to USAS candidates",
+    "source": "omw-ja:2.0",
+    "note": "Replace/extend with full exported lemma mapping from your WordNet build."
+  },
+  "ご飯": ["F1", "S1.1.1"],
+  "銀行": ["I1.1", "I2.1"],
+  "走る": ["M1", "A1.1.1"],
+  "先生": ["P1", "S2"],
+  "研究": ["X2.4", "A1.6"],
+  "勉強": ["P1", "X2.4"],
+  "学校": ["H1", "S5+"],
+  "食べる": ["F1"],
+  "見る": ["X3.4", "A8"],
+  "話す": ["Q2.1", "Q2.2"]
+}

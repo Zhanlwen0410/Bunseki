@@ -39,7 +39,13 @@ export function ProfilePage(): JSX.Element {
   const [domainWordsErr, setDomainWordsErr] = useState<string | null>(null)
   const [domainFilter, setDomainFilter] = useState('')
   const domainFreq = (result?.domain_frequency as Record<string, number> | undefined) || {}
-  const [profileRows, setProfileRows] = useState<Array<Record<string, unknown>>>(profile as Array<Record<string, unknown>>)
+  const [profileRows, setProfileRows] = useState<Array<Record<string, unknown>>>(
+    Array.isArray(profile) ? (profile as Array<Record<string, unknown>>) : [],
+  )
+  const safeTokens = useMemo(
+    () => (Array.isArray(result?.tokens) ? result!.tokens.filter((x) => !!x && typeof x === 'object') : []),
+    [result],
+  )
 
   useEffect(() => {
     if (!result) {
@@ -56,7 +62,7 @@ export function ProfilePage(): JSX.Element {
         }
       })
       .catch(() => {
-        setProfileRows(profile as Array<Record<string, unknown>>)
+        setProfileRows(Array.isArray(profile) ? (profile as Array<Record<string, unknown>>) : [])
       })
   }, [apiBase, language, profile, result])
 
@@ -66,8 +72,21 @@ export function ProfilePage(): JSX.Element {
       return
     }
     setDomainWordsErr(null)
-    apiGetJson<Array<Record<string, unknown>>>(apiBase, `/domain-words/${encodeURIComponent(selectedDomain)}`)
-      .then(setDomainWords)
+    apiGetJson<Array<Record<string, unknown>> | { ok?: boolean; data?: Array<Record<string, unknown>> }>(
+      apiBase,
+      `/domain-words/${encodeURIComponent(selectedDomain)}`,
+    )
+      .then((resp) => {
+        if (Array.isArray(resp)) {
+          setDomainWords(resp)
+          return
+        }
+        if (resp && Array.isArray(resp.data)) {
+          setDomainWords(resp.data)
+          return
+        }
+        setDomainWords([])
+      })
       .catch((e: unknown) => setDomainWordsErr(e instanceof Error ? e.message : String(e)))
   }, [apiBase, selectedDomain])
 
@@ -118,7 +137,7 @@ export function ProfilePage(): JSX.Element {
           {t(language as never, 'domainTransitionNetwork')}
         </Typography>
         <DomainNetworkD3
-          tokens={result.tokens}
+          tokens={safeTokens}
           emptyText={t(language as never, 'domainNetworkEmpty')}
           onNodeClick={(domainCode) => {
             setSelectedDomain(domainCode)

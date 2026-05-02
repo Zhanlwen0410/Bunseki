@@ -41,6 +41,10 @@ export function KwicPage(): JSX.Element {
   const [infoMsg, setInfoMsg] = useState<string | null>(null)
   const [menuAnchor, setMenuAnchor] = useState<HTMLElement | null>(null)
   const [menuRow, setMenuRow] = useState<KwicRow | null>(null)
+  const safeRows = useMemo(
+    () => (Array.isArray(rows) ? rows.filter((r) => !!r && typeof r === 'object') : []),
+    [rows],
+  )
 
   useEffect(() => {
     setDomainCode((prev) => prev || selectedDomain || '')
@@ -59,14 +63,15 @@ export function KwicPage(): JSX.Element {
     setErr(null)
     setInfoMsg(null)
     try {
-      const data = await apiPostJson<KwicRow[]>(apiBase, '/kwic', {
+      const data = await apiPostJson<KwicRow[] | { ok?: boolean; data?: KwicRow[] }>(apiBase, '/kwic', {
         keyword: k,
         domain_code: effectiveDomain,
         pos_filter: posFilter,
         use_regex: useRegex,
       })
-      setRows(data)
-      if (!data.length) {
+      const normalized = Array.isArray(data) ? data : (Array.isArray(data?.data) ? data.data : [])
+      setRows(normalized)
+      if (!normalized.length) {
         setInfoMsg(t(language as never, 'noRows'))
       }
     } catch (e) {
@@ -93,7 +98,7 @@ export function KwicPage(): JSX.Element {
   }
 
   const exportKwicCsv = async () => {
-    if (!rows.length) {
+    if (!safeRows.length) {
       return
     }
     if (!window.wmatrixDesktop?.saveFile) {
@@ -101,7 +106,7 @@ export function KwicPage(): JSX.Element {
       return
     }
     const header = ['line,left,key,right,domain_code,source_offset,sentence_index,confidence'].join(',')
-    const body = rows
+    const body = safeRows
       .map((r) => {
         const esc = (s: unknown) => `"${String(s ?? '').replace(/"/g, '""')}"`
         return [
@@ -192,7 +197,7 @@ export function KwicPage(): JSX.Element {
         <Button variant="contained" onClick={() => void runKwic()} disabled={loading}>
           {loading ? t(language as never, 'searching') : t(language as never, 'search')}
         </Button>
-        <Button variant="outlined" onClick={() => void exportKwicCsv()} disabled={!rows.length}>
+        <Button variant="outlined" onClick={() => void exportKwicCsv()} disabled={!safeRows.length}>
           {t(language as never, 'exportKwicCsv')}
         </Button>
       </Stack>
@@ -209,7 +214,7 @@ export function KwicPage(): JSX.Element {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((r, i) => {
+          {safeRows.map((r, i) => {
             const parts = (typeof r.current === 'string' ? r.current : `${r.left ?? ''}${r.key ?? ''}${r.right ?? ''}`).split(
               new RegExp(`(${String(r.key ?? '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'),
             )

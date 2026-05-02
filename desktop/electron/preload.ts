@@ -22,4 +22,7 @@ contextBridge.exposeInMainWorld('wmatrixDesktop', {
     return () => ipcRenderer.removeListener('bunseki:menu-action', listener)
   },
   setMenuLanguage: (lang: string): Promise<{ ok: boolean }> => ipcRenderer.invoke('bunseki:set-menu-language', { lang }),
+  getConstraints: (): Promise<{ ok: boolean; data?: unknown; error?: string }> => ipcRenderer.invoke('bunseki:get-constraints'),
+  setConstraints: (content: unknown): Promise<{ ok: boolean; error?: string }> =>
+    ipcRenderer.invoke('bunseki:set-constraints', { content }),
 })

@@ -1,4 +1,5 @@
 import MenuBookIcon from '@mui/icons-material/MenuBook'
+import SettingsIcon from '@mui/icons-material/Settings'
 import HubIcon from '@mui/icons-material/Hub'
 import CompareArrowsIcon from '@mui/icons-material/CompareArrows'
 import DashboardIcon from '@mui/icons-material/Dashboard'
@@ -41,7 +42,9 @@ import { WorkspacePage } from './pages/WorkspacePage'
 import { AboutPage } from './pages/AboutPage'
 import { HelpPage } from './pages/HelpPage'
 import { WordFrequencyPage } from './pages/WordFrequencyPage'
+import { SettingsPage } from './pages/SettingsPage'
 import { useWorkbench } from './contexts/WorkbenchContext'
+import { ErrorBoundary } from './components/common/ErrorBoundary'
 
 const drawerWidth = 240
 const drawerWidthCollapsed = 64
@@ -58,6 +61,7 @@ function Shell(): JSX.Element {
     { to: '/word-frequency', label: t(language as never, 'wordFrequency'), icon: <BarChartIcon /> },
     { to: '/lexicon', label: t(language as never, 'lexicon'), icon: <MenuBookIcon /> },
     { to: '/compare', label: t(language as never, 'compare'), icon: <CompareArrowsIcon /> },
+    { to: '/settings', label: t(language as never, 'settings'), icon: <SettingsIcon /> },
     { to: '/about', label: t(language as never, 'about'), icon: <InfoIcon /> },
     { to: '/help', label: t(language as never, 'help'), icon: <HelpOutlineIcon /> },
   ]
@@ -211,6 +215,7 @@ function Shell(): JSX.Element {
           <Route path="/lexicon" element={<LexiconPage />} />
           <Route path="/word-frequency" element={<WordFrequencyPage />} />
           <Route path="/compare" element={<ComparePage />} />
+          <Route path="/settings" element={<SettingsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/help" element={<HelpPage />} />
         </Routes>
@@ -255,7 +260,9 @@ export default function App(): JSX.Element {
         </Box>
       ) : (
         <WorkbenchProvider apiBase={apiBase}>
-          <Shell />
+          <ErrorBoundary fallback={<Box sx={{ p: 4 }}><Typography color="error">Page crashed. Please return to Workspace and retry.</Typography></Box>}>
+            <Shell />
+          </ErrorBoundary>
         </WorkbenchProvider>
       )}
     </ThemeProvider>

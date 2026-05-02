@@ -9,7 +9,7 @@
   "scripts": {
     "build:electron": "npx esbuild electron/main.ts --bundle --platform=node --target=node18 --external:electron --format=cjs --outfile=dist-electron/main.cjs && npx esbuild electron/preload.ts --bundle --platform=node --target=node18 --external:electron --format=cjs --outfile=dist-electron/preload.cjs",
     "watch:electron": "concurrently -k \"npx esbuild electron/main.ts --bundle --platform=node --target=node18 --external:electron --format=cjs --outfile=dist-electron/main.cjs --watch\" \"npx esbuild electron/preload.ts --bundle --platform=node --target=node18 --external:electron --format=cjs --outfile=dist-electron/preload.cjs --watch\"",
-    "dev": "npm run build:electron && concurrently -k \"npm run watch:electron\" \"vite\" \"wait-on http://127.0.0.1:5173 && electron .\"",
+    "dev": "npm run build:electron && concurrently -k --success first \"wait-on http://127.0.0.1:5173 && electron .\" \"npm run watch:electron\" \"vite\"",
     "build": "npm run build:electron && vite build",
     "dist:win": "npm run build && electron-builder --win nsis",
     "dist:dir": "npm run build && electron-builder --dir",

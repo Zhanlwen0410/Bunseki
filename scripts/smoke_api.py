@@ -27,7 +27,7 @@ def get_json(path: str) -> Any:
         return json.loads(resp.read().decode("utf-8"))
 
 
-def post_json(path: str, payload: dict[str, Any]) -> Any:
+def post_json(path: str, payload: dict[str, Any], timeout: float = 20.0) -> Any:
     body = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(
         f"{BASE_URL}{path}",
@@ -35,7 +35,7 @@ def post_json(path: str, payload: dict[str, Any]) -> Any:
         method="POST",
         headers={"Content-Type": "application/json"},
     )
-    with urllib.request.urlopen(req, timeout=20) as resp:  # noqa: S310
+    with urllib.request.urlopen(req, timeout=timeout) as resp:  # noqa: S310
         return json.loads(resp.read().decode("utf-8"))
 
 
@@ -90,21 +90,50 @@ def main() -> int:
         analyze = post_json(
             "/analyze",
             {
-                "text": "This is a smoke test. This smoke test repeats words.",
+                "text": "彼女の言葉は刃のように刺さった。学校へ行く。he is here.",
                 "language": "ja",
                 "mode": "C",
                 "min_frequency": 1,
+                "use_bert_wsd": False,
             },
+            timeout=90.0,
         )
         assert analyze.get("ok") is True, analyze
         result = analyze["result"]
         assert result.get("summary", {}).get("token_count", 0) > 0, result
+        tokens = result.get("tokens", [])
+        assert isinstance(tokens, list) and tokens, result
+        # 3-layer pipeline schema + metrics checks.
+        assert any("basic_meaning" in t for t in tokens), "missing basic_meaning in tokens"
+        assert any("source_domain_label" in t for t in tokens), "missing source_domain_label in tokens"
+        assert all("mrw_distance" in t for t in tokens), "missing mrw_distance on some token"
+        assert all("is_metaphor_candidate" in t for t in tokens), "missing is_metaphor_candidate on some token"
+        assert all(len(t.get("mrw_candidates", [])) <= 3 for t in tokens if isinstance(t.get("mrw_candidates"), list))
+        assert any(isinstance(t.get("scores_by_domain"), dict) and t.get("scores_by_domain") for t in tokens), (
+            "missing adjudication scores"
+        )
+        layers = result.get("layers", {})
+        assert int(layers.get("L2 vector used", 0)) > 0, layers
+        school = next((t for t in tokens if str(t.get("surface", "")) == "学校"), None)
+        if school is not None:
+            assert str(school.get("domain_code", "")) != "S9", school
+        pronoun = next((t for t in tokens if str(t.get("surface", "")).lower() == "he"), None)
+        if pronoun is not None:
+            assert not str(pronoun.get("domain_code", "")).startswith("B1"), pronoun
 
         profile = get_json("/domain-profile?language=ja")
         assert profile.get("ok") is True, profile
 
         kwic = post_json("/kwic", {"keyword": "smoke", "domain_code": ""})
-        assert isinstance(kwic, list)
+        if isinstance(kwic, dict):
+            assert kwic.get("ok") is True, kwic
+            assert isinstance(kwic.get("data"), list), kwic
+        else:
+            assert isinstance(kwic, list)
+
+        domain_words = get_json("/domain-words/Z99")
+        assert domain_words.get("ok") is True, domain_words
+        assert isinstance(domain_words.get("data"), list), domain_words
 
         lexicon_overview = get_json("/lexicon/overview")
         assert "domains" in lexicon_overview

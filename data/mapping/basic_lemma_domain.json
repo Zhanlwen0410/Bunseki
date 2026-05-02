@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "description": "High-confidence basic lemma -> USAS domain mapping. Used before WSD as a reliability anchor.",
+    "policy": "For core function/content lemmas, prefer stable basic domain over noisy context disambiguation."
+  },
+  "私": "S2",
+  "わたし": "S2",
+  "僕": "S2",
+  "ぼく": "S2",
+  "俺": "S2",
+  "おれ": "S2",
+  "あなた": "S2",
+  "君": "S2",
+  "彼": "S2",
+  "彼女": "S2",
+  "人": "S2",
+  "学校": "H1",
+  "大学": "H1",
+  "駅": "M3",
+  "会社": "I2.1"
+}

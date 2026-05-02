@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import json
 from pathlib import Path
 from typing import Any
@@ -8,9 +10,8 @@ from src.services.analysis_service import (
     append_lexicon_terms,
     kwic_from_result,
     lexicon_overview_payload,
-    parse_min_frequency,
-    parse_top_n,
-    validate_analyze_options,
+    parse_analyze_params,
+    safe_error_msg,
 )
 from src.main import default_lexicon_path
 from src.utils.file_io import read_json_file
@@ -35,79 +36,48 @@ class WebviewAPI:
             "lexicon_path": str(self.lexicon_path),
             "categories": self.categories,
             "help": (
-                "WLSP is now used as the original lexicon source. "
-                "Mapping prefers koumoku1 overrides, then falls back to top-level WLSP classes. "
-                "Lexicon import normalizes entries and tries lemma-first matching."
+                "WordNet is used as the primary semantic source. "
+                "Pipeline uses WordNet->USAS mapping first, then vector nearest-neighbor fallback."
             ),
         }
 
     def analyze(self, payload: dict[str, Any]) -> dict[str, Any]:
-        text = str(payload.get("text", "")).strip()
-        if not text:
-            return {
-                "ok": False,
-                "error": {
-                    "code": "missing_text",
-                    "message": "Text is required.",
-                    "hint": "Paste or type Japanese text in the input area.",
-                },
-            }
-        language = str(payload.get("language", "zh")).strip()
-        tokenizer = str(payload.get("tokenizer", "sudachi")).strip()
-        mode = str(payload.get("mode", "C")).strip()
-        try:
-            min_frequency = parse_min_frequency(payload.get("min_frequency", 1))
-            top_n = parse_top_n(payload.get("top_n"))
-        except (TypeError, ValueError) as exc:
-            return {
-                "ok": False,
-                "error": {
-                    "code": "invalid_number",
-                    "message": f"Invalid numeric option: {exc}",
-                    "hint": "min_frequency and top_n must be integers.",
-                },
-            }
-
-        err = validate_analyze_options(
-            language=language,
-            tokenizer=tokenizer,
-            mode=mode,
-            min_frequency=min_frequency,
-            top_n=top_n,
+        parsed = parse_analyze_params(
+            text_raw=payload.get("text", ""),
+            language_raw=payload.get("language", "zh"),
+            tokenizer_raw=payload.get("tokenizer", "sudachi"),
+            mode_raw=payload.get("mode", "C"),
+            min_frequency_raw=payload.get("min_frequency", 1),
+            top_n_raw=payload.get("top_n"),
+            lexicon_path_raw=payload.get("lexicon_path"),
+            default_lexicon_path=str(self.lexicon_path),
+            use_bert_wsd_raw=payload.get("use_bert_wsd", True),
+            bert_model_dir_raw=payload.get("bert_model_dir"),
         )
-        if err:
-            return {"ok": False, "error": err}
-
-        lexicon = str(payload.get("lexicon_path") or self.lexicon_path).strip()
-        if not lexicon:
-            return {
-                "ok": False,
-                "error": {
-                    "code": "missing_lexicon",
-                    "message": "Lexicon path is empty.",
-                    "hint": "Set a valid lexicon JSON path.",
-                },
-            }
+        if not parsed.get("ok"):
+            return {"ok": False, "error": parsed["error"]}
 
         try:
             data = analyze_with_profile(
-                text=text,
-                lexicon_path=lexicon,
+                text=parsed["text"],
+                lexicon_path=parsed["lexicon"],
                 categories_path=str(self.categories_path),
                 categories=self.categories,
-                language=language,
-                tokenizer=tokenizer,
-                mode=mode,
+                language=parsed["language"],
+                tokenizer=parsed["tokenizer"],
+                mode=parsed["mode"],
                 unknown_domain="Z99",
-                min_frequency=min_frequency,
-                top_n=top_n,
+                min_frequency=parsed["min_frequency"],
+                top_n=parsed["top_n"],
+                use_bert_wsd=parsed["use_bert_wsd"],
+                bert_model_dir=parsed["bert_model_dir"],
             )
-        except Exception as exc:
+        except Exception as exc:  # noqa: BLE001
             return {
                 "ok": False,
                 "error": {
                     "code": "analyze_failed",
-                    "message": str(exc),
+                    "message": safe_error_msg(exc),
                     "hint": "Check lexicon/categories paths and Sudachi installation.",
                 },
             }
@@ -143,7 +113,7 @@ class WebviewAPI:
                     "hint": "",
                 }
             }
-        if off < 0 or off > len(self.last_result.get("source_text", "")):
+        if off < 0 or off >= len(self.last_result.get("source_text", "")):
             return {
                 "error": {
                     "code": "offset_out_of_range",
@@ -174,12 +144,12 @@ class WebviewAPI:
                 known_domain_codes=known,
                 default_domain="Z99",
             )
-        except Exception as exc:
+        except Exception as exc:  # noqa: BLE001
             return {
                 "ok": False,
                 "error": {
                     "code": "lexicon_write_failed",
-                    "message": str(exc),
+                    "message": safe_error_msg(exc),
                     "hint": "Check file permissions and JSON format.",
                 },
             }

@@ -3,7 +3,6 @@ import { spawn, type ChildProcess } from 'node:child_process'
 import * as fs from 'node:fs/promises'
 import * as http from 'node:http'
 import * as path from 'node:path'
-import * as process from 'node:process'
 
 const isDev = !app.isPackaged
 /** dist-electron/ when running from compiled bundle */
@@ -15,6 +14,33 @@ const recentFilesPath = path.join(repoRoot, 'data', 'recent_files.json')
 let apiBaseUrl = ''
 let pythonChild: ChildProcess | null = null
 let menuLang: 'zh' | 'ja' | 'en' = 'en'
+
+async function appendLog(line: string): Promise<void> {
+  try {
+    const logPath = path.join(repoRoot, 'data', 'logs', 'electron-main.log')
+    await fs.mkdir(path.dirname(logPath), { recursive: true })
+    await fs.appendFile(logPath, `[${new Date().toISOString()}] ${line}\n`, { encoding: 'utf-8' })
+  } catch {
+    // ignore logging failures
+  }
+}
+
+process.on('uncaughtException', (err) => {
+  const msg = `uncaughtException: ${err?.stack || err?.message || String(err)}`
+  console.error(msg)
+  void appendLog(msg)
+  try {
+    dialog.showErrorBox('Bunseki', msg)
+  } catch {
+    // ignore
+  }
+})
+
+process.on('unhandledRejection', (reason) => {
+  const msg = `unhandledRejection: ${String(reason)}`
+  console.error(msg)
+  void appendLog(msg)
+})
 
 function sendMenuAction(action: string): void {
   const win = BrowserWindow.getFocusedWindow() ?? BrowserWindow.getAllWindows()[0]
@@ -95,7 +121,18 @@ async function startPythonApi(): Promise<void> {
 
   pythonChild = spawn(py.command, args, {
     cwd: repoRoot,
-    env: { ...process.env, WMIX_API_PORT: port },
+    env: {
+      ...process.env,
+      WMIX_API_PORT: port,
+      // Hard-lock offline mode: avoid any accidental network calls at runtime.
+      TRANSFORMERS_OFFLINE: process.env.TRANSFORMERS_OFFLINE || '1',
+      HF_HUB_OFFLINE: process.env.HF_HUB_OFFLINE || '1',
+      HF_HUB_DISABLE_SYMLINKS_WARNING: process.env.HF_HUB_DISABLE_SYMLINKS_WARNING || '1',
+      // Reduce native crash risks on some Windows setups (OpenMP/MKL).
+      OMP_NUM_THREADS: process.env.OMP_NUM_THREADS || '1',
+      MKL_NUM_THREADS: process.env.MKL_NUM_THREADS || '1',
+      TOKENIZERS_PARALLELISM: process.env.TOKENIZERS_PARALLELISM || 'false',
+    },
     stdio: isDev ? 'inherit' : 'pipe',
     windowsHide: false,
   })
@@ -136,8 +173,34 @@ function createWindow(): void {
     win.show()
   })
 
+  win.webContents.on('did-finish-load', async () => {
+    await appendLog('did-finish-load')
+  })
+  win.webContents.on('did-fail-load', async (_evt, errorCode, errorDescription, validatedURL) => {
+    const msg = `did-fail-load code=${errorCode} desc=${errorDescription} url=${validatedURL}`
+    console.error(msg)
+    await appendLog(msg)
+    dialog.showErrorBox('Bunseki', msg)
+  })
+  win.webContents.on('render-process-gone', async (_evt, details) => {
+    const msg = `render-process-gone reason=${details.reason} exitCode=${details.exitCode}`
+    console.error(msg)
+    await appendLog(msg)
+    dialog.showErrorBox('Bunseki', msg)
+  })
+  win.webContents.on('unresponsive', async () => {
+    const msg = 'renderer unresponsive'
+    console.error(msg)
+    await appendLog(msg)
+  })
+  win.webContents.on('console-message', async (_evt, level, message, line, sourceId) => {
+    const msg = `renderer console level=${level} ${sourceId}:${line} ${message}`
+    await appendLog(msg)
+  })
+
   if (isDev) {
     void win.loadURL('http://127.0.0.1:5173')
+    win.webContents.openDevTools({ mode: 'detach' })
   } else {
     const indexHtml = path.join(desktopRoot, 'dist', 'index.html')
     void win.loadFile(indexHtml)
@@ -394,6 +457,28 @@ ipcMain.handle('bunseki:set-menu-language', async (_evt, args: { lang?: string }
     buildAppMenu()
   }
   return { ok: true }
+})
+
+// Settings (whitelisted) - semantic constraints JSON.
+const constraintsPath = path.join(repoRoot, 'data', 'mapping', 'semantic_constraints.json')
+ipcMain.handle('bunseki:get-constraints', async () => {
+  try {
+    const raw = await fs.readFile(constraintsPath, { encoding: 'utf-8' })
+    return { ok: true, data: JSON.parse(raw) as unknown }
+  } catch (e) {
+    return { ok: false, error: e instanceof Error ? e.message : String(e) }
+  }
+})
+
+ipcMain.handle('bunseki:set-constraints', async (_evt, args: { content?: unknown }) => {
+  try {
+    await fs.mkdir(path.dirname(constraintsPath), { recursive: true })
+    const payload = JSON.stringify(args?.content ?? {}, null, 2)
+    await fs.writeFile(constraintsPath, payload, { encoding: 'utf-8' })
+    return { ok: true }
+  } catch (e) {
+    return { ok: false, error: e instanceof Error ? e.message : String(e) }
+  }
 })
 
 app.whenReady().then(async () => {

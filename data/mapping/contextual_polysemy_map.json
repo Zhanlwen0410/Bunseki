@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "description": "Natural-language oriented polysemy candidate domains. This augments WordNet baseline candidates before BERT-WSD.",
+    "strategy": "Keep WordNet mapping intact, only add plausible candidate domains for ambiguous words.",
+    "note": "Edit iteratively based on corpus errors."
+  },
+  "高い": ["A13", "I1.3", "N3"],
+  "低い": ["A13", "N3"],
+  "重い": ["N3", "X2.1", "A11.1"],
+  "軽い": ["N3", "E4.1"],
+  "明るい": ["W2", "E4.1", "X9.1"],
+  "暗い": ["W2", "E4.1", "X9.1"],
+  "上げる": ["M1", "I1.3", "A13"],
+  "下げる": ["M1", "I1.3", "A13"],
+  "上がる": ["M1", "I1.3", "A13"],
+  "下がる": ["M1", "I1.3", "A13"],
+  "かける": ["A1.1.1", "I1.3", "M2", "Q2.1"],
+  "取る": ["A9", "A1.1.1", "M2", "X2.4"],
+  "切る": ["A1.1.2", "T2-", "N5.1+"],
+  "見る": ["X3.4", "X2.4", "Q1.2"],
+  "聞く": ["X3.2", "Q2.1", "X2.4"],
+  "強い": ["S1.2.5+", "A5.1+", "E3+"],
+  "弱い": ["S1.2.5-", "A5.1-", "E3-"],
+  "深い": ["N3.7+", "X2.1"],
+  "浅い": ["N3.7-", "X2.1"],
+  "熱い": ["O4.6+", "E1", "S1.2.1+"],
+  "冷たい": ["O4.6-", "E1-", "S1.2.1-"],
+  "甘い": ["X3.1", "A5.1-", "S1.2.1+"],
+  "辛い": ["X3.1", "E4.1-", "A12-"],
+  "痛い": ["B2-", "E4.1-"],
+  "硬い": ["O4.5", "A12-"],
+  "柔らかい": ["O4.5", "A12+"]
+}

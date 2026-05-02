@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import csv
 import json
 import tkinter as tk
@@ -134,8 +136,7 @@ class WmatrixJAApp:
     def __init__(self, root: tk.Tk) -> None:
         self.root = root
         self.base_dir = Path(__file__).resolve().parents[2]
-        generated_lexicon = self.base_dir / "data" / "lexicon_wlsp_usas.json"
-        self.default_lexicon = generated_lexicon if generated_lexicon.exists() else self.base_dir / "data" / "lexicon.json"
+        self.default_lexicon = self.base_dir / "data" / "lexicon.json"
         self.categories_path = self.base_dir / "data" / "usas_categories.json"
         self.recent_path = self.base_dir / "data" / "recent_files.json"
 

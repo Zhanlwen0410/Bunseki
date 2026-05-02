@@ -28,7 +28,7 @@ import {
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { apiPostJson } from '../api/client'
 import { useWorkbench } from '../contexts/WorkbenchContext'
-import type { TokenRow } from '../types/models'
+import type { AnalysisResult, TokenRow } from '../types/models'
 import { getDomainColor } from '../utils/domainColors'
 import { useNavigate } from 'react-router-dom'
 import { t } from '../i18n'
@@ -85,24 +85,60 @@ export function WorkspacePage(): JSX.Element {
   const textFileInputRef = useRef<HTMLInputElement | null>(null)
   const projectFileInputRef = useRef<HTMLInputElement | null>(null)
 
+  const LEMMA_ROWS_LIMIT = 200
+  const DOMAIN_ROWS_LIMIT = 200
+
   const lemmaRows = useMemo(() => {
     if (!result) {
-      return []
+      return { rows: [], truncated: false, total: 0 }
     }
-    return Object.entries(result.lemma_frequency || {})
+    const entries = Object.entries(result.lemma_frequency || {})
       .map(([lemma, count]) => ({ lemma, count }))
       .sort((a, b) => b.count - a.count)
-      .slice(0, 200)
+    return {
+      rows: entries.slice(0, LEMMA_ROWS_LIMIT),
+      truncated: entries.length > LEMMA_ROWS_LIMIT,
+      total: entries.length,
+    }
   }, [result])
 
   const domainRows = useMemo(() => {
     if (!result) {
-      return []
+      return { rows: [], truncated: false, total: 0 }
     }
-    return Object.entries(result.domain_frequency || {})
+    const entries = Object.entries(result.domain_frequency || {})
       .map(([domain, count]) => ({ domain, count }))
       .sort((a, b) => b.count - a.count)
-      .slice(0, 200)
+    return {
+      rows: entries.slice(0, DOMAIN_ROWS_LIMIT),
+      truncated: entries.length > DOMAIN_ROWS_LIMIT,
+      total: entries.length,
+    }
+  }, [result])
+
+  const wsdStatus = useMemo(() => {
+    const wsd = (result as AnalysisResult | null)?.wsd
+    if (!wsd) {
+      return null
+    }
+    const enabled = Boolean(wsd.enabled)
+    const applied = Number(wsd.applied_tokens || 0)
+    const modelDir = String(wsd.model_dir || '')
+    const reason = String(wsd.fallback_reason || '')
+    return { enabled, applied, modelDir, reason }
+  }, [result])
+  const layerStatus = useMemo(() => {
+    const layers = (result as AnalysisResult | null)?.layers
+    if (!layers) return null
+    return {
+      l1Hit: Number(layers.layer1_dictionary_hits || 0),
+      l1Miss: Number(layers.layer1_dictionary_misses || 0),
+      l1Wn: Number(layers.layer1_wordnet_backfill_hits || 0),
+      l2: Number(layers.layer2_vector_hits || 0),
+      l3: Number(layers.layer3_adjudications || 0),
+      mrw: Number(layers.layer2_mrw_candidates || 0),
+      mipvu: Number(layers.layer3_mipvu_tokens || 0),
+    }
   }, [result])
 
   const resolveDomainLabel = (code: string): string => {
@@ -125,6 +161,12 @@ export function WorkspacePage(): JSX.Element {
     }
     const labels = normalized.map((c) => resolveDomainLabel(c))
     return `${normalized.join(' / ')} (${labels.join(' / ')})`
+  }
+
+  const renderDomainCodeText = (codeRaw: unknown): string => {
+    const code = String(codeRaw || '').trim()
+    if (!code) return t(language as never, 'na')
+    return `${code} (${resolveDomainLabel(code)})`
   }
 
   const loadContext = async (token: TokenRow) => {
@@ -224,8 +266,10 @@ export function WorkspacePage(): JSX.Element {
     const loaded = (results.primary || null) as Record<string, unknown> | null
     setCompareLeft(String(results.compareLeft || ''))
     setCompareRight(String(results.compareRight || ''))
-    if (loaded) {
+    if (loaded && Array.isArray((loaded as AnalysisResult).tokens)) {
       setResultState(loaded as never)
+    } else if (loaded) {
+      setActionMsg(t(language as never, 'projectFormatInvalid'))
     }
     await saveRecent('project', loadedFrom)
     setActionMsg(`${t(language as never, 'projectLoaded')}: ${loadedFrom}`)
@@ -491,7 +535,10 @@ export function WorkspacePage(): JSX.Element {
           type="number"
           size="small"
           value={minFrequency}
-          onChange={(e) => setMinFrequency(Number(e.target.value) || 1)}
+          onChange={(e) => {
+            const v = Number(e.target.value)
+            setMinFrequency(Number.isNaN(v) ? 0 : v)
+          }}
           sx={{ width: 140 }}
         />
         <TextField
@@ -608,6 +655,17 @@ export function WorkspacePage(): JSX.Element {
             {String(result.summary?.token_count ?? '')}, {t(language as never, 'uniqueLemmas')}:&nbsp;
             {String(result.summary?.unique_lemma_count ?? '')}
           </Alert>
+          {wsdStatus ? (
+            <Alert severity={wsdStatus.enabled ? 'info' : 'warning'} variant="outlined">
+              BERT-WSD: {wsdStatus.enabled ? 'enabled' : 'disabled'} | applied_tokens: {String(wsdStatus.applied)} | model: {wsdStatus.modelDir || 'N/A'}
+              {wsdStatus.reason ? ` | reason: ${wsdStatus.reason}` : ''}
+            </Alert>
+          ) : null}
+          {layerStatus ? (
+            <Alert severity="info" variant="outlined">
+              Layers: L1(hit/miss)={layerStatus.l1Hit}/{layerStatus.l1Miss} | L1-WordNet(backfill)={layerStatus.l1Wn} | L2(vector)={layerStatus.l2} | L2(MRW candidates)={layerStatus.mrw} | L3(adjudication)={layerStatus.l3} | L3(MIPVU tokens)={layerStatus.mipvu}
+            </Alert>
+          ) : null}
           <Paper>
             <Tabs value={tab} onChange={(_, next) => setTab(next)} variant="scrollable">
               <Tab label={t(language as never, 'tabTokens')} />
@@ -622,7 +680,10 @@ export function WorkspacePage(): JSX.Element {
                   <TableCell>#</TableCell>
                   <TableCell>{t(language as never, 'surface')}</TableCell>
                   <TableCell>{t(language as never, 'lemma')}</TableCell>
-                  <TableCell>{t(language as never, 'domain')}</TableCell>
+                  <TableCell>源域</TableCell>
+                  <TableCell>目标域</TableCell>
+                  <TableCell>MRW</TableCell>
+                  <TableCell>MIPVU</TableCell>
                   <TableCell>{t(language as never, 'pos')}</TableCell>
                   <TableCell align="right">{t(language as never, 'offset')}</TableCell>
                 </TableRow>
@@ -645,12 +706,46 @@ export function WorkspacePage(): JSX.Element {
                     <TableCell>
                       <Chip
                         size="small"
-                        label={renderDomainText(tok)}
+                        label={renderDomainCodeText(tok.source_domain_label || tok.domain_code)}
                         sx={{
-                          bgcolor: getDomainColor(String(tok.domain_code || '')),
+                          bgcolor: getDomainColor(String(tok.source_domain_label || tok.domain_code || '')),
                           color: '#fff',
                         }}
                       />
+                    </TableCell>
+                    <TableCell>
+                      {tok.target_domain_label ? (
+                        <Chip
+                          size="small"
+                          label={renderDomainCodeText(tok.target_domain_label)}
+                          sx={{
+                            bgcolor: getDomainColor(String(tok.target_domain_label || 'Z99')),
+                            color: '#fff',
+                          }}
+                        />
+                      ) : (
+                        <Typography variant="body2" color="text.secondary">—</Typography>
+                      )}
+                    </TableCell>
+                    <TableCell>
+                      {tok.is_metaphor_candidate ? (
+                        <Chip size="small" color="warning" label={`cand ${Number(tok.mrw_distance || 0).toFixed(3)}`} />
+                      ) : (
+                        <Typography variant="body2" color="text.secondary">
+                          {Number(tok.mrw_distance || 0).toFixed(3)}
+                        </Typography>
+                      )}
+                    </TableCell>
+                    <TableCell>
+                      {tok.mipvu_path ? (
+                        <Chip
+                          size="small"
+                          color={String(tok.mipvu_path || '').includes('llm_confirm') ? 'success' : String(tok.mipvu_path || '').includes('llm_failed') ? 'error' : 'default'}
+                          label={String(tok.mipvu_path || '')}
+                        />
+                      ) : (
+                        <Typography variant="body2" color="text.secondary">—</Typography>
+                      )}
                     </TableCell>
                     <TableCell>{String(tok.pos || '')}</TableCell>
                     <TableCell align="right">{String(tok.offset ?? '')}</TableCell>
@@ -660,6 +755,7 @@ export function WorkspacePage(): JSX.Element {
             </Table>
           ) : null}
           {tab === 1 ? (
+            <>
             <Table size="small" component={Paper}>
               <TableHead>
                 <TableRow>
@@ -668,7 +764,7 @@ export function WorkspacePage(): JSX.Element {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {lemmaRows.map((row) => (
+                {lemmaRows.rows.map((row) => (
                   <TableRow
                     key={row.lemma}
                     hover
@@ -684,8 +780,15 @@ export function WorkspacePage(): JSX.Element {
                 ))}
               </TableBody>
             </Table>
+            {lemmaRows.truncated ? (
+              <Alert severity="info" sx={{ mt: 1 }}>
+                Showing top {LEMMA_ROWS_LIMIT} of {lemmaRows.total} lemmas.
+              </Alert>
+            ) : null}
+            </>
           ) : null}
           {tab === 2 ? (
+            <>
             <Table size="small" component={Paper}>
               <TableHead>
                 <TableRow>
@@ -694,7 +797,7 @@ export function WorkspacePage(): JSX.Element {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {domainRows.map((row) => (
+                {domainRows.rows.map((row) => (
                   <TableRow
                     key={row.domain}
                     hover
@@ -708,6 +811,12 @@ export function WorkspacePage(): JSX.Element {
                 ))}
               </TableBody>
             </Table>
+            {domainRows.truncated ? (
+              <Alert severity="info" sx={{ mt: 1 }}>
+                Showing top {DOMAIN_ROWS_LIMIT} of {domainRows.total} domains.
+              </Alert>
+            ) : null}
+            </>
           ) : null}
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1}>
             <Button
@@ -748,6 +857,73 @@ export function WorkspacePage(): JSX.Element {
                   {t(language as never, 'token')}: {String(selectedToken.surface || '')} ({String(selectedToken.lemma || '')}) /{' '}
                   {t(language as never, 'domain')}: {renderDomainText(selectedToken)}
                 </Typography>
+              ) : null}
+              {selectedToken ? (
+                <Stack spacing={0.75} sx={{ mb: 1 }}>
+                  {selectedToken.basic_meaning ? (
+                    <Typography variant="body2">
+                      <b>basic_meaning:</b> {String(selectedToken.basic_meaning)}
+                    </Typography>
+                  ) : null}
+                  {selectedToken.source_domain_label ? (
+                    <Typography variant="body2">
+                      <b>source_domain_label:</b> {String(selectedToken.source_domain_label)}
+                      {selectedToken.layer1_source ? ` (${String(selectedToken.layer1_source)})` : ''}
+                    </Typography>
+                  ) : null}
+                  {selectedToken.mrw_distance !== undefined ? (
+                    <Typography variant="body2">
+                      <b>mrw_distance:</b> {Number(selectedToken.mrw_distance || 0).toFixed(4)}{' '}
+                      {selectedToken.is_metaphor_candidate ? '(candidate)' : ''}
+                    </Typography>
+                  ) : null}
+                  {selectedToken.mipvu_path !== undefined ? (
+                    <Typography variant="body2">
+                      <b>mipvu_path:</b>{' '}
+                      <Chip
+                        size="small"
+                        color={String(selectedToken.mipvu_path || '').includes('llm_confirm') ? 'success' : String(selectedToken.mipvu_path || '').includes('llm_failed') ? 'error' : 'default'}
+                        label={String(selectedToken.mipvu_path || '')}
+                      />
+                    </Typography>
+                  ) : null}
+                  {selectedToken.is_metaphor !== undefined ? (
+                    <Typography variant="body2">
+                      <b>is_metaphor:</b> {selectedToken.is_metaphor ? 'True' : 'False'}
+                    </Typography>
+                  ) : null}
+                  {selectedToken.source_domain ? (
+                    <Typography variant="body2">
+                      <b>source_domain (LLM refined):</b> {String(selectedToken.source_domain)}
+                    </Typography>
+                  ) : null}
+                  {selectedToken.target_domain ? (
+                    <Typography variant="body2">
+                      <b>target_domain:</b> {String(selectedToken.target_domain)}
+                    </Typography>
+                  ) : null}
+                  {selectedToken.target_domain_label ? (
+                    <Typography variant="body2">
+                      <b>target_domain_label:</b> {String(selectedToken.target_domain_label)}
+                    </Typography>
+                  ) : null}
+                  {selectedToken.confidence ? (
+                    <Typography variant="body2">
+                      <b>confidence:</b> {String(selectedToken.confidence)}
+                    </Typography>
+                  ) : null}
+                  {/* Also show token_mipvu from context-detail API response for cross-ref */}
+                  {contextDetail && (contextDetail as Record<string, unknown>).token_mipvu ? (
+                    <Paper variant="outlined" sx={{ p: 1, bgcolor: '#fafbfc' }}>
+                      <Typography variant="caption" color="text.secondary">
+                        API token_mipvu
+                      </Typography>
+                      <pre style={{ margin: 0, whiteSpace: 'pre-wrap', fontSize: 11 }}>
+                        {JSON.stringify((contextDetail as Record<string, unknown>).token_mipvu, null, 2)}
+                      </pre>
+                    </Paper>
+                  ) : null}
+                </Stack>
               ) : null}
               {contextErr ? <Alert severity="error">{contextErr}</Alert> : null}
               {contextDetail ? (

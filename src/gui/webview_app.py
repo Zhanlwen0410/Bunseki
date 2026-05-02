@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from pathlib import Path
 
 from src.gui.webview_api import WebviewAPI

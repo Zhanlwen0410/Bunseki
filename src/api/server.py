@@ -29,13 +29,17 @@ from src.services.analysis_service import (
     append_lexicon_terms,
     kwic_from_result,
     lexicon_overview_payload,
+    parse_analyze_params,
     parse_min_frequency,
     parse_top_n,
+    safe_error_msg,
     validate_analyze_options,
 )
 from src.utils.category_labels import localize_categories
 from src.utils.file_io import read_json_file
 from src.utils.file_io import write_json
+
+from config.settings import get_llm_config_safe, save_llm_config, PROVIDER_KEYS, PROVIDER_LABELS
 
 
 # NOTE: This server is designed for single-user desktop use.
@@ -101,9 +105,8 @@ def bootstrap() -> dict[str, Any]:
             "cc_icon_url": "/assets/cc-by-nc-nd.svg",
         },
         "help": (
-            "WLSP is now used as the original lexicon source. "
-            "Mapping prefers koumoku1 overrides, then falls back to top-level WLSP classes. "
-            "Lexicon import normalizes entries and tries lemma-first matching."
+            "WordNet (omw-ja) is used as the primary semantic source. "
+            "Pipeline applies WordNet->USAS mapping first, then vector nearest-neighbor fallback."
         ),
     }
 
@@ -116,21 +119,29 @@ class AnalyzeRequest(BaseModel):
     min_frequency: Any = 1
     top_n: Any = None
     lexicon_path: Optional[str] = None
+    # Default off: in Windows desktop builds, enabling WSD can cause heavy model
+    # initialization and, in some environments, native crashes (0xC0000005).
+    use_bert_wsd: bool = False
+    bert_model_dir: Optional[str] = None
 
 
 @app.post("/analyze")
 def analyze(req: AnalyzeRequest) -> dict[str, Any]:
-    text = str(req.text or "").strip()
-    if not text:
-        return {
-            "ok": False,
-            "error": {
-                "code": "missing_text",
-                "message": "Text is required.",
-                "hint": "Paste or type Japanese text in the input area.",
-            },
-        }
-    if len(text) > _MAX_TEXT_LENGTH:
+    parsed = parse_analyze_params(
+        text_raw=req.text,
+        language_raw=req.language,
+        tokenizer_raw=req.tokenizer,
+        mode_raw=req.mode,
+        min_frequency_raw=req.min_frequency,
+        top_n_raw=req.top_n,
+        lexicon_path_raw=req.lexicon_path,
+        default_lexicon_path=str(state.lexicon_path),
+        use_bert_wsd_raw=req.use_bert_wsd,
+        bert_model_dir_raw=req.bert_model_dir,
+    )
+    if not parsed.get("ok"):
+        return {"ok": False, "error": parsed["error"]}
+    if len(parsed["text"]) > _MAX_TEXT_LENGTH:
         return {
             "ok": False,
             "error": {
@@ -139,69 +150,32 @@ def analyze(req: AnalyzeRequest) -> dict[str, Any]:
                 "hint": "Split the text into smaller segments.",
             },
         }
-    language = str(req.language or "zh").strip()
-    tokenizer = str(req.tokenizer or "sudachi").strip()
-    mode = str(req.mode or "C").strip()
-    try:
-        min_frequency = parse_min_frequency(req.min_frequency)
-        top_n = parse_top_n(req.top_n)
-    except (TypeError, ValueError) as exc:
-        return {
-            "ok": False,
-            "error": {
-                "code": "invalid_number",
-                "message": f"Invalid numeric option: {exc}",
-                "hint": "min_frequency and top_n must be integers.",
-            },
-        }
-
-    err = validate_analyze_options(
-        language=language,
-        tokenizer=tokenizer,
-        mode=mode,
-        min_frequency=min_frequency,
-        top_n=top_n,
-    )
-    if err:
-        return {"ok": False, "error": err}
-
-    lexicon = str(req.lexicon_path or state.lexicon_path).strip()
-    if not lexicon:
-        return {
-            "ok": False,
-            "error": {
-                "code": "missing_lexicon",
-                "message": "Lexicon path is empty.",
-                "hint": "Set a valid lexicon JSON path.",
-            },
-        }
-
     try:
         data = analyze_with_profile(
-            text=text,
-            lexicon_path=lexicon,
+            text=parsed["text"],
+            lexicon_path=parsed["lexicon"],
             categories_path=str(state.categories_path),
             categories=state.categories,
-            language=language,
-            tokenizer=tokenizer,
-            mode=mode,
+            language=parsed["language"],
+            tokenizer=parsed["tokenizer"],
+            mode=parsed["mode"],
             unknown_domain="Z99",
-            min_frequency=min_frequency,
-            top_n=top_n,
+            min_frequency=parsed["min_frequency"],
+            top_n=parsed["top_n"],
+            use_bert_wsd=parsed["use_bert_wsd"],
+            bert_model_dir=parsed["bert_model_dir"],
         )
     except Exception as exc:  # noqa: BLE001
         return {
             "ok": False,
             "error": {
                 "code": "analyze_failed",
-                "message": str(exc),
+                "message": safe_error_msg(exc),
                 "hint": "Check lexicon/categories paths and tokenizer installation (SudachiPy or MeCab).",
             },
         }
-
     state.last_result = data["result"]
-    # Keep lexicon center aligned with the path used for analysis.
-    state.lexicon_path = Path(lexicon)
+    state.lexicon_path = Path(parsed["lexicon"])
     return {"ok": True, "result": data["result"], "profile": data["profile"]}
 
 
@@ -225,10 +199,13 @@ def domain_profile(language: str = "ja") -> dict[str, Any]:
 
 
 @app.get("/domain-words/{domain_code}")
-def domain_words(domain_code: str) -> list[dict[str, Any]]:
+def domain_words(domain_code: str) -> dict[str, Any]:
     if not state.last_result:
-        return []
-    return build_domain_word_rows(state.last_result["tokens"], domain_code)
+        return {"ok": False, "error": {"code": "no_session", "message": "No analysis result yet.", "hint": "Run Analyze first."}}
+    tokens = state.last_result.get("tokens", [])
+    if not isinstance(tokens, list):
+        tokens = []
+    return {"ok": True, "data": build_domain_word_rows(tokens, domain_code)}
 
 
 class KwicRequest(BaseModel):
@@ -270,17 +247,17 @@ def word_frequency(req: WordFrequencyRequest) -> dict[str, Any]:
 
 
 @app.post("/kwic")
-def kwic(req: KwicRequest) -> list[dict[str, Any]]:
+def kwic(req: KwicRequest) -> dict[str, Any]:
     if not state.last_result:
-        return []
-    return kwic_from_result(
+        return {"ok": False, "error": {"code": "no_session", "message": "No analysis result yet.", "hint": "Run Analyze first."}}
+    return {"ok": True, "data": kwic_from_result(
         state.last_result,
         keyword=str(req.keyword or ""),
         domain_code=str(req.domain_code or ""),
         pos_filter=str(req.pos_filter or ""),
         use_regex=bool(req.use_regex),
         span=36,
-    )
+    )}
 
 
 class ContextDetailRequest(BaseModel):
@@ -294,7 +271,7 @@ def context_detail(req: ContextDetailRequest) -> dict[str, Any]:
         return {"error": {"code": "no_session", "message": "No analysis result yet.", "hint": ""}}
     src = state.last_result.get("source_text", "")
     off = int(req.offset)
-    if off > len(src):
+    if off >= len(src):
         return {
             "error": {
                 "code": "offset_out_of_range",
@@ -302,7 +279,27 @@ def context_detail(req: ContextDetailRequest) -> dict[str, Any]:
                 "hint": "",
             }
         }
-    return build_context_detail(src, off, req.key, window=180)
+    result = build_context_detail(src, off, req.key, window=180)
+    # Attach MIPVU fields from the matching token for diagnostics
+    for tok in state.last_result.get("tokens", []):
+        if isinstance(tok.get("offset"), int) and int(tok["offset"]) == off:
+            result["token_mipvu"] = {
+                "surface": tok.get("surface", ""),
+                "lemma": tok.get("lemma", ""),
+                "domain_code": tok.get("domain_code", ""),
+                "basic_meaning": tok.get("basic_meaning", ""),
+                "source_domain_label": tok.get("source_domain_label", ""),
+                "mrw_distance": tok.get("mrw_distance", 0.0),
+                "is_metaphor_candidate": tok.get("is_metaphor_candidate", False),
+                "is_metaphor": tok.get("is_metaphor", False),
+                "mipvu_path": tok.get("mipvu_path", ""),
+                "target_domain": tok.get("target_domain"),
+                "target_domain_label": tok.get("target_domain_label"),
+                "source_domain": tok.get("source_domain"),
+                "confidence": tok.get("confidence"),
+            }
+            break
+    return result
 
 
 @app.get("/lexicon/overview")
@@ -343,7 +340,7 @@ def lexicon_add(req: LexiconAddRequest) -> dict[str, Any]:
             "ok": False,
             "error": {
                 "code": "lexicon_write_failed",
-                "message": str(exc),
+                "message": safe_error_msg(exc),
                 "hint": "Check file permissions and JSON format.",
             },
         }
@@ -382,7 +379,7 @@ def lexicon_remove_term(req: LexiconRemoveTermRequest) -> dict[str, Any]:
         clear_tagger_cache()
         return {"ok": True, "removed": removed}
     except Exception as exc:  # noqa: BLE001
-        return {"ok": False, "error": {"code": "lexicon_write_failed", "message": str(exc), "hint": ""}}
+        return {"ok": False, "error": {"code": "lexicon_write_failed", "message": safe_error_msg(exc), "hint": ""}}
 
 
 class LexiconRemoveDomainRequest(BaseModel):
@@ -405,7 +402,7 @@ def lexicon_remove_domain(req: LexiconRemoveDomainRequest) -> dict[str, Any]:
             clear_tagger_cache()
         return {"ok": True, "removed": 1 if existed else 0}
     except Exception as exc:  # noqa: BLE001
-        return {"ok": False, "error": {"code": "lexicon_write_failed", "message": str(exc), "hint": ""}}
+        return {"ok": False, "error": {"code": "lexicon_write_failed", "message": safe_error_msg(exc), "hint": ""}}
 
 
 class LexiconMoveTermRequest(BaseModel):
@@ -435,7 +432,7 @@ def lexicon_move_term(req: LexiconMoveTermRequest) -> dict[str, Any]:
         clear_tagger_cache()
         return {"ok": True}
     except Exception as exc:  # noqa: BLE001
-        return {"ok": False, "error": {"code": "lexicon_write_failed", "message": str(exc), "hint": ""}}
+        return {"ok": False, "error": {"code": "lexicon_write_failed", "message": safe_error_msg(exc), "hint": ""}}
 
 
 class CompareRequest(BaseModel):
@@ -446,6 +443,8 @@ class CompareRequest(BaseModel):
     min_frequency: Any = 1
     top_n: Any = None
     lexicon_path: Optional[str] = None
+    use_bert_wsd: bool = False
+    bert_model_dir: Optional[str] = None
 
 
 @app.post("/compare")
@@ -506,6 +505,8 @@ def compare(req: CompareRequest) -> dict[str, Any]:
             min_frequency=min_frequency,
             top_n=top_n,
             include_profile=False,
+            use_bert_wsd=bool(req.use_bert_wsd),
+            bert_model_dir=req.bert_model_dir,
         )
         right_data = analyze_with_profile(
             text=right,
@@ -518,16 +519,59 @@ def compare(req: CompareRequest) -> dict[str, Any]:
             min_frequency=min_frequency,
             top_n=top_n,
             include_profile=False,
+            use_bert_wsd=bool(req.use_bert_wsd),
+            bert_model_dir=req.bert_model_dir,
         )
     except Exception as exc:  # noqa: BLE001
         return {
             "ok": False,
             "error": {
                 "code": "compare_failed",
-                "message": str(exc),
+                "message": safe_error_msg(exc),
                 "hint": "",
             },
         }
     lr = left_data["result"]
     rr = right_data["result"]
     return {"ok": True, "comparison": build_comparison(lr, rr)}
+
+
+# ---------------------------------------------------------------------------
+# LLM configuration endpoints
+# ---------------------------------------------------------------------------
+
+class LlmConfigRequest(BaseModel):
+    provider: str = ""
+    fallback_chain: list[str] = Field(default_factory=list)
+    api_keys: dict[str, str] = Field(default_factory=dict)
+    local_model_path: str = ""
+
+
+@app.get("/llm/config")
+async def get_llm_config():
+    """Return current LLM config (API keys are masked)."""
+    try:
+        return {"ok": True, **get_llm_config_safe()}
+    except Exception as exc:
+        return {"ok": False, "error": safe_error_msg(exc)}
+
+
+@app.post("/llm/config")
+async def set_llm_config(req: LlmConfigRequest):
+    """Save LLM config to data/llm_config.json and reload.
+
+    API key values of "****" are treated as "unchanged" — the existing
+    stored value is preserved.
+    """
+    try:
+        result = save_llm_config(
+            provider=req.provider,
+            fallback_chain=req.fallback_chain if req.fallback_chain else None,
+            api_keys=req.api_keys if req.api_keys else None,
+            local_model_path=req.local_model_path,
+        )
+        # Clear the router cache so the next analysis picks up new config
+        clear_tagger_cache()
+        return {"ok": True, **result}
+    except Exception as exc:
+        return {"ok": False, "error": safe_error_msg(exc)}

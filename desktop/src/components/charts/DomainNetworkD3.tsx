@@ -30,6 +30,10 @@ export function DomainNetworkD3({
   const containerRef = useRef<HTMLDivElement | null>(null)
   const [svgSize, setSvgSize] = useState({ width: initialWidth, height: initialHeight })
 
+  const safeTokens = Array.isArray(tokens)
+    ? tokens.filter((tok): tok is TokenRow => Boolean(tok) && typeof tok === 'object')
+    : []
+
   // Responsive resize
   useEffect(() => {
     const el = containerRef.current
@@ -48,9 +52,9 @@ export function DomainNetworkD3({
 
   useEffect(() => {
     const svgEl = ref.current
-    if (!svgEl || !tokens.length) return
+    if (!svgEl || !safeTokens.length) return
 
-    const codes = tokens
+    const codes = safeTokens
       .map((t) => String(t.domain_code || '').trim())
       .filter((c) => c.length > 0)
 
@@ -227,9 +231,9 @@ export function DomainNetworkD3({
       simulation.stop()
       tooltip.remove()
     }
-  }, [tokens, maxNodes, onNodeClick, colorMap, svgSize])
+  }, [safeTokens, maxNodes, onNodeClick, colorMap, svgSize])
 
-  if (!tokens.length) {
+  if (!safeTokens.length) {
     return (
       <Typography variant="body2" color="text.secondary">
         {emptyText || ''}
