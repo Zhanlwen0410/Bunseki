@@ -44,14 +44,6 @@ data/
 
 Deprecated modules (retained for reference): `cli/`, `pipeline/`, `mapper/`, `disambiguator/`, `analyzer/`, `evaluation/`, `src/llm/mipvu.py`
 
-## Author
-
-- Organization: School of Foreign Languages, Xinjiang University
-- Author: Zhang Wenze
-- License: CC BY-NC-ND 4.0
-
-![CC BY-NC-ND 4.0](image/by-nc-nd.svg)
-
 ## Installation
 
 1. Install Python 3.10+ with SudachiPy.
