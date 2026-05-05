@@ -19,32 +19,15 @@ Bunseki is a Japanese MIPVU metaphor analysis system with a desktop GUI and CLI.
 - KWIC view, semantic profile (bar chart + D3 network), lexicon editor
 - Export as JSON, CSV, or CSV bundle
 
-## Architecture
+## System Overview
 
-```
-bunseki.py              # Unified entry point → src.main.main
-config/settings.py      # Centralized config (env vars + data/llm_config.json)
-llm/                    # LLM client layer (router + 4 providers + SQLite cache)
-  base.py               #   Abstract LLMClient (3 methods, multiple-choice only)
-  router.py             #   Fallback chain + MD5 cache
-src/
-  main.py               # build_result() — core 3-layer pipeline
-  semantic/tagger.py    # Semantic tagger (WordNet mapping + vector search)
-  metaphor/mrw.py       # MRW encoder (BERT cosine distance)
-  api/server.py         # FastAPI endpoints (analyze, kwic, lexicon, LLM config, etc.)
-  analysis/             # Domain profile, context detail, comparison
-  statistics/           # Frequency, domain stats, summary
-  services/             # Analysis service layer
-  utils/                # File I/O, category labels
-desktop/                # Electron + React desktop app
-data/
-  lexicon.json          # Domain-code → words lexicon
-  usas_categories.json  # USAS category table (A1–Z99, ja/en labels)
-  llm_config.json       # LLM provider + masked API keys (written by Settings UI)
-  jmdict/               # JMdict Japanese dictionary data
-  wordnet/wnjpn.db      # Japanese WordNet SQLite database
-  mapping/              # WordNet→USAS static maps
-```
+
+bunseki.py # Entry point
+config/ # Configuration system
+llm/ # Language model interface layer
+src/ # Core processing pipeline
+desktop/ # Desktop application (Electron + React)
+data/ # Linguistic resources (abstracted)
 
 Deprecated modules (retained for reference): `cli/`, `pipeline/`, `mapper/`, `disambiguator/`, `analyzer/`, `evaluation/`, `src/llm/mipvu.py`
 
@@ -114,16 +97,6 @@ Quick smoke test:
 ```
 python scripts/smoke_api.py
 ```
-
-## MIPVU Pipeline
-
-### How metaphor detection works
-
-1. **L1 — Basic sense lookup:** JMdict gloss + static WordNet→USAS mapping provides a basic meaning and source domain label for each content word.
-2. **L2 — Semantic adjudication:** The SemanticPipeline scores candidate domains via vector similarity; if vector search fails, it falls back to MRW-based candidates.
-3. **MRW distance:** BERT embeddings encode the basic meaning and the context sentence; cosine distance between them measures metaphorical divergence. Each POS tag has its own threshold (e.g., 名詞=0.35, 動詞=0.25).
-4. **L3 — LLM MIPVU (when configured):** For tokens exceeding the MRW threshold, the LLM confirms the metaphor, refines the source domain, and identifies the target domain. All prompts are multiple-choice (A/B/C) to prevent hallucination. Results are cached via MD5.
-
 ### Output fields
 
 Each token includes: `domain_code`, `mrw_distance`, `is_metaphor_candidate`, `is_metaphor`, `source_domain`, `target_domain`, `target_domain_label`, `mipvu_path`, `confidence`, `pipeline_source`
@@ -141,18 +114,3 @@ npm run dist:win     # Windows installer (NSIS)
 
 The lexicon editor supports: one term per line, `DOMAIN<TAB>TERM`, `DOMAIN,TERM`, `DOMAIN:TERM`, or full `.json` lexicon import.
 
-## Data Files
-
-| File | Purpose |
-|------|---------|
-| `data/lexicon.json` | Domain code → words lexicon |
-| `data/usas_categories.json` | USAS category table (A1–Z99, ja/en labels) |
-| `data/llm_config.json` | LLM provider + masked API keys |
-| `data/llm_cache.db` | SQLite cache for LLM responses |
-| `data/jmdict/` | JMdict Japanese dictionary data |
-| `data/wordnet/wnjpn.db` | Japanese WordNet SQLite database |
-| `data/mapping/wordnet_usas_map.json` | Lemma-level WordNet → USAS mapping |
-| `data/mapping/wn_pwn_usas_map.json` | Synset-level WordNet → USAS mapping |
-| `data/mapping/semantic_constraints.json` | Token filter + candidate constraints |
-| `data/mapping/basic_lemma_domain.json` | Per-lemma high-confidence domain anchors |
-| `data/recent_files.json` | GUI recent-file cache |
