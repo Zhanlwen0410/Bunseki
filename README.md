@@ -12,12 +12,8 @@ Bunseki is a Japanese MIPVU metaphor analysis system with a desktop GUI and CLI.
 
 ## Features
 
-- **Desktop GUI:** Electron + React + TypeScript + Material-UI, launched from `run.bat` (Vite + Electron + local Python FastAPI)
-- **3-layer semantic pipeline:** L1 (dictionary/WordNet) → L2 (vector similarity + MRW fallback) → L3 (adjudication + LLM-MIPVU)
 - **MIPVU metaphor detection:** BERT cosine distance between basic and contextual meaning, POS-specific thresholds
 - **LLM MIPVU layer (optional):** LLM confirms MRW, refines source domain, and identifies target domain via multiple-choice prompts (DeepSeek/OpenAI/Gemini/Claude/local)
-- **SQLite LLM cache:** identical inputs skip API calls via MD5 hash keys
-- SudachiPy tokenization and lemmatization with POS tagging
 - Chinese, Japanese, English UI switching
 - Project save/open, single-text analysis, dual-text comparison
 - KWIC view, semantic profile (bar chart + D3 network), lexicon editor
