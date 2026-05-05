@@ -1,5 +1,13 @@
 # Bunseki
 
+> ⚠️ **Repository Status: Outdated Early Prototype**
+>
+> This repository contains an early-stage version of the Bunseki system and is no longer actively maintained.
+>
+> The current development has significantly progressed beyond what is presented here, with major improvements in architecture, semantic mapping, and overall system design.
+>
+> This codebase is kept for reference purposes only and does not reflect the latest implementation.
+
 Bunseki is a Japanese MIPVU metaphor analysis system with a desktop GUI and CLI. It performs semantic domain tagging using a USAS-style category system (A1–Z99) and identifies metaphorical expressions via a 3-layer pipeline with optional LLM-based source/target domain classification.
 
 ## Features
